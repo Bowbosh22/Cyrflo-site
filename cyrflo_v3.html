@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyrflo le Koulou — Tourisme Fluvial · République du Congo</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green: #1D9E75;
+  --green-dark: #0F6E56;
+  --gold: #c9a84c;
+  --gold-light: #e0bf6a;
+  --dark: #0a0e0d;
+  --darker: #060c09;
+  --white: #ffffff;
+  --muted: rgba(255,255,255,0.5);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;scroll-behavior:smooth}
+body{font-family:'Outfit',sans-serif;background:var(--dark);color:var(--white);overflow-x:hidden}
+
+/* ── RIBBON ─────────────────────────────────────── */
+.ribbon{
+  background:linear-gradient(90deg,#a87e28,var(--gold),#a87e28);
+  background-size:200% 100%;
+  animation:ribbonShimmer 3s linear infinite;
+  color:var(--dark);
+  text-align:center;
+  padding:11px;
+  font-size:12px;
+  font-weight:500;
+  letter-spacing:0.3px;
+}
+.ribbon a{color:var(--dark);text-decoration:underline;cursor:pointer}
+@keyframes ribbonShimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+/* ── NAV ─────────────────────────────────────────── */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 2.5rem;height:72px;
+  background:linear-gradient(to bottom,rgba(0,0,0,0.7) 0%,transparent 100%);
+  transition:background 0.4s, backdrop-filter 0.4s;
+}
+.nav.scrolled{background:rgba(10,14,13,0.96);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,0.07)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;letter-spacing:1px;color:#fff}
+.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:2rem}
+.nav-link{
+  color:rgba(255,255,255,0.8);font-size:13px;font-weight:400;cursor:pointer;
+  letter-spacing:0.3px;border:none;background:none;padding:6px 0;
+  position:relative;font-family:'Outfit',sans-serif;
+  transition:color 0.2s;
+}
+.nav-link::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;
+  height:1px;background:var(--gold);
+  transform:scaleX(0);transform-origin:left;
+  transition:transform 0.25s ease;
+}
+.nav-link:hover{color:#fff}
+.nav-link:hover::after{transform:scaleX(1)}
+.nav-right{display:flex;align-items:center;gap:1rem}
+.nav-cta{
+  background:var(--green);color:#fff;border:none;
+  padding:8px 20px;border-radius:3px;font-size:13px;font-weight:500;
+  cursor:pointer;font-family:'Outfit',sans-serif;letter-spacing:0.3px;
+  transition:background 0.2s, transform 0.15s;
+}
+.nav-cta:hover{background:var(--green-dark);transform:translateY(-1px)}
+.nav-tel{color:rgba(255,255,255,0.6);font-size:12px}
+
+/* ── HERO ────────────────────────────────────────── */
+.hero{
+  position:relative;height:100vh;min-height:640px;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding-bottom:5rem;overflow:hidden;
+}
+
+
+
+/* soft fade on left edge to blend into green */
+
+
+.hero-bg{
+  position:absolute;inset:0;
+  background-image:url("hero.png");
+  background-size:cover;
+  background-position:center 40%;
+  z-index:0;
+}
+
+/* Animated noise/grain overlay */
+.hero-grain{
+  position:absolute;inset:0;z-index:1;opacity:0.04;
+  background-image:url("pattern_1.svg");
+  animation:grainAnim 0.4s steps(1) infinite;
+}
+@keyframes grainAnim{
+  0%{transform:translate(0,0)}
+  10%{transform:translate(-2%,-3%)}
+  20%{transform:translate(3%,1%)}
+  30%{transform:translate(-1%,4%)}
+  40%{transform:translate(4%,-2%)}
+  50%{transform:translate(-3%,3%)}
+  60%{transform:translate(2%,-4%)}
+  70%{transform:translate(-4%,2%)}
+  80%{transform:translate(3%,-1%)}
+  90%{transform:translate(-2%,4%)}
+  100%{transform:translate(0,0)}
+}
+
+/* Animated SVG river lines */
+.hero-rivers{position:absolute;inset:0;z-index:1;pointer-events:none}
+.river-path{
+  stroke-dasharray:1200;
+  stroke-dashoffset:1200;
+  animation:drawRiver 3s ease forwards;
+}
+.river-path:nth-child(2){animation-delay:0.4s}
+.river-path:nth-child(3){animation-delay:0.8s}
+@keyframes drawRiver{to{stroke-dashoffset:0}}
+
+.hero-overlay{
+  position:absolute;inset:0;z-index:2;
+  background:linear-gradient(to bottom,rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.15) 40%,rgba(0,0,0,0.75) 100%);
+}
+
+/* Floating particles */
+.particles{position:absolute;inset:0;z-index:2;pointer-events:none;overflow:hidden}
+.particle{
+  position:absolute;border-radius:50%;
+  background:var(--gold);opacity:0;
+  animation:floatUp var(--dur,8s) ease-in var(--delay,0s) infinite;
+}
+@keyframes floatUp{
+  0%{opacity:0;transform:translateY(0) scale(0)}
+  10%{opacity:0.6}
+  90%{opacity:0.1}
+  100%{opacity:0;transform:translateY(-100vh) scale(1.5)}
+}
+
+
+.hero-content{position:relative;z-index:3;padding:0 2.5rem;max-width:860px}
+.hero-photo-col img{
+  width:100%;height:100%;object-fit:cover;object-position:center 20%;
+  display:block;
+}
+.hero-photo-col::before{
+  content:'';position:absolute;inset:0;z-index:1;
+  background:linear-gradient(to right, rgba(7,25,15,0.85) 0%, rgba(7,25,15,0.1) 35%, transparent 100%);
+}
+.hero-photo-col::after{
+  content:'';position:absolute;inset:0;z-index:1;
+  background:linear-gradient(to bottom, rgba(7,25,15,0.4) 0%, transparent 30%, rgba(7,25,15,0.55) 100%);
+}
+
+.hero-eyebrow{
+  font-size:11px;font-weight:500;letter-spacing:3px;text-transform:uppercase;
+  color:var(--gold);margin-bottom:1.2rem;
+  opacity:0;animation:fadeUp 0.8s 0.3s ease forwards;
+}
+.hero-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(48px,7vw,88px);font-weight:300;line-height:1.02;
+  color:#fff;margin-bottom:1.5rem;
+  opacity:0;animation:fadeUp 0.9s 0.5s ease forwards;
+}
+.hero-title em{font-style:italic;color:#9dd9c2}
+.hero-sub{
+  font-size:15px;color:rgba(255,255,255,0.72);font-weight:300;
+  margin-bottom:2.75rem;max-width:500px;line-height:1.65;
+  opacity:0;animation:fadeUp 0.9s 0.7s ease forwards;
+}
+.hero-btns{
+  display:flex;gap:14px;align-items:center;
+  opacity:0;animation:fadeUp 0.9s 0.9s ease forwards;
+}
+.btn-hero-primary{
+  background:var(--gold);color:var(--dark);border:none;
+  padding:15px 34px;font-size:14px;font-weight:600;cursor:pointer;
+  font-family:'Outfit',sans-serif;letter-spacing:0.5px;
+  border-radius:2px;transition:all 0.25s;position:relative;overflow:hidden;
+}
+.btn-hero-primary::before{
+  content:'';position:absolute;inset:0;
+  background:rgba(255,255,255,0.15);
+  transform:translateX(-100%) skewX(-10deg);
+  transition:transform 0.35s ease;
+}
+.btn-hero-primary:hover::before{transform:translateX(110%) skewX(-10deg)}
+.btn-hero-primary:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,168,76,0.35)}
+.btn-hero-ghost{
+  background:transparent;color:#fff;
+  border:1px solid rgba(255,255,255,0.35);
+  padding:14px 30px;font-size:14px;font-weight:400;cursor:pointer;
+  font-family:'Outfit',sans-serif;letter-spacing:0.5px;
+  border-radius:2px;transition:all 0.25s;
+}
+.btn-hero-ghost:hover{border-color:#fff;background:rgba(255,255,255,0.07);transform:translateY(-2px)}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+
+.scroll-hint{
+  position:absolute;bottom:2rem;right:2.5rem;z-index:4;
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+  color:rgba(255,255,255,0.35);font-size:10px;letter-spacing:2px;text-transform:uppercase;
+  animation:fadeUp 1s 1.2s ease both;
+}
+.scroll-line{
+  width:1px;height:44px;
+  background:linear-gradient(to bottom,rgba(201,168,76,0.9),transparent);
+  animation:scrollAnim 2s ease-in-out infinite;
+}
+@keyframes scrollAnim{
+  0%{transform:scaleY(0);transform-origin:top}
+  49%{transform:scaleY(1);transform-origin:top}
+  50%{transform:scaleY(1);transform-origin:bottom}
+  100%{transform:scaleY(0);transform-origin:bottom}
+}
+
+/* ── SEARCH BAR ──────────────────────────────────── */
+#searchSection{background:var(--dark);padding:0 2.5rem}
+.search-wrap{transform:translateY(-30px)}
+.search-bar{
+  background:rgba(255,255,255,0.98);border-radius:5px;
+  display:flex;align-items:stretch;overflow:hidden;
+  box-shadow:0 24px 70px rgba(0,0,0,0.55);
+}
+.search-field{
+  flex:1;display:flex;flex-direction:column;padding:14px 20px;
+  border-right:1px solid #e5e5e5;cursor:pointer;
+  transition:background 0.15s;
+}
+.search-field:hover{background:#f5faf8}
+.search-field:last-of-type{border-right:none}
+.sf-label{font-size:10px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:#999;margin-bottom:4px}
+.sf-value{font-size:14px;color:#1a2420;font-weight:400}
+.sf-value.placeholder{color:#bbb}
+.sf-select{
+  background:none;border:none;font-size:14px;color:#1a2420;
+  font-family:'Outfit',sans-serif;width:100%;cursor:pointer;outline:none;padding:0;
+}
+.sf-select option{color:#1a2420}
+.search-btn{
+  background:var(--green);color:#fff;border:none;
+  padding:0 2.2rem;font-size:14px;font-weight:500;cursor:pointer;
+  font-family:'Outfit',sans-serif;letter-spacing:0.5px;
+  display:flex;align-items:center;gap:8px;
+  transition:background 0.2s;white-space:nowrap;
+}
+.search-btn:hover{background:var(--green-dark)}
+.search-btn svg{width:16px;height:16px}
+
+/* ── STATS BAR ───────────────────────────────────── */
+.stats-bar{
+  background:var(--dark);
+  border-top:1px solid rgba(255,255,255,0.05);
+  border-bottom:1px solid rgba(255,255,255,0.05);
+  display:flex;justify-content:center;
+}
+.stat-item{
+  padding:1.75rem 3.5rem;display:flex;flex-direction:column;align-items:center;
+  border-right:1px solid rgba(255,255,255,0.05);
+  position:relative;
+}
+.stat-item:last-child{border-right:none}
+.stat-item::before{
+  content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);
+  width:0;height:2px;background:var(--green);
+  transition:width 0.6s 0.2s ease;
+}
+.stat-item.visible::before{width:60%}
+.stat-n{
+  font-family:'Cormorant Garamond',serif;
+  font-size:36px;font-weight:300;color:var(--gold);line-height:1;
+}
+.stat-l{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;letter-spacing:0.5px}
+
+/* ── SECTIONS ────────────────────────────────────── */
+.section{padding:5.5rem 2.5rem}
+.section-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3.5rem}
+.section-eyebrow{
+  font-size:10px;font-weight:500;letter-spacing:3.5px;text-transform:uppercase;
+  color:var(--green);margin-bottom:12px;
+}
+.section-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(34px,4vw,52px);font-weight:300;color:#fff;line-height:1.08;
+}
+.section-title em{font-style:italic;color:#9dd9c2}
+.see-all{
+  color:var(--gold);font-size:13px;cursor:pointer;background:none;
+  border:none;border-bottom:1px solid rgba(201,168,76,0.3);
+  padding-bottom:2px;font-family:'Outfit',sans-serif;
+  transition:all 0.2s;white-space:nowrap;
+}
+.see-all:hover{color:var(--gold-light);border-bottom-color:rgba(201,168,76,0.7)}
+
+/* ── DESTINATION CARDS ───────────────────────────── */
+.dest-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  grid-template-rows:auto auto;
+  gap:14px;
+}
+.dest-card{position:relative;overflow:hidden;border-radius:5px;cursor:pointer}
+.dest-card.big{grid-row:1/3;min-height:540px}
+.dest-card.small{min-height:260px}
+.dest-bg{position:absolute;inset:0;transition:transform 0.7s ease}
+.dest-card:hover .dest-bg{transform:scale(1.07)}
+.dest-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(0,0,0,0.82) 0%,rgba(0,0,0,0.08) 60%);
+  transition:opacity 0.3s;
+}
+.dest-card:hover .dest-overlay{opacity:0.85}
+.dest-content{position:absolute;bottom:0;left:0;right:0;padding:1.75rem;transition:transform 0.35s ease}
+.dest-card:hover .dest-content{transform:translateY(-6px)}
+.dest-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:8px}
+.dest-name{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:300;color:#fff;line-height:1.1}
+.dest-card.small .dest-name{font-size:22px}
+.dest-price{
+  font-size:12px;color:var(--gold);margin-top:10px;
+  display:flex;align-items:center;gap:5px;
+  opacity:0;transform:translateY(8px);
+  transition:all 0.3s 0.05s;
+}
+.dest-card:hover .dest-price{opacity:1;transform:translateY(0)}
+.dest-tag{
+  position:absolute;top:1.25rem;left:1.25rem;
+  background:var(--green);color:#fff;font-size:10px;font-weight:500;
+  padding:4px 11px;border-radius:2px;letter-spacing:0.5px;
+  box-shadow:0 4px 12px rgba(29,158,117,0.35);
+}
+
+/* Card gradient backgrounds */
+.bg-traversee{background:linear-gradient(145deg,#071a11 0%,#1a6b4a 45%,#0f4a32 75%,#2d8a5e 100%)}
+.bg-koulou{background:linear-gradient(145deg,#122a1c 0%,#2d5a3d 55%,#0a2a1e 100%)}
+.bg-croisiere{background:linear-gradient(145deg,#0a1520 0%,#1a3a5e 55%,#0d2a4a 100%)}
+.bg-kinshasa{background:linear-gradient(145deg,#231505 0%,#6b4a1a 55%,#4a2a0d 100%)}
+.bg-circuits{background:linear-gradient(145deg,#160a22 0%,#4a1a6b 55%,#2a0d4a 100%)}
+.card-deco{position:absolute;inset:0;opacity:0.12}
+
+/* ── OFFERS ──────────────────────────────────────── */
+.offers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.offer-card{
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.07);
+  border-radius:5px;overflow:hidden;cursor:pointer;
+  transition:all 0.3s;
+}
+.offer-card:hover{
+  border-color:rgba(201,168,76,0.35);
+  transform:translateY(-5px);
+  box-shadow:0 16px 48px rgba(0,0,0,0.4);
+  background:rgba(255,255,255,0.05);
+}
+.offer-img{height:190px;position:relative;overflow:hidden}
+.offer-img-inner{
+  position:absolute;inset:0;
+  transition:transform 0.6s ease;
+}
+.offer-card:hover .offer-img-inner{transform:scale(1.06)}
+.offer-body{padding:1.4rem}
+.offer-badge{
+  display:inline-block;background:var(--green);color:#fff;
+  font-size:10px;font-weight:500;padding:3px 10px;border-radius:2px;
+  letter-spacing:0.5px;margin-bottom:12px;
+}
+.offer-badge.gold{background:rgba(201,168,76,0.15);color:var(--gold);border:1px solid rgba(201,168,76,0.3)}
+.offer-title{
+  font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:400;
+  color:#fff;margin-bottom:7px;line-height:1.25;
+}
+.offer-desc{font-size:12px;color:rgba(255,255,255,0.45);line-height:1.6;margin-bottom:1.1rem}
+.offer-footer{
+  display:flex;justify-content:space-between;align-items:center;
+  border-top:1px solid rgba(255,255,255,0.06);padding-top:12px;
+}
+.offer-price{font-size:11px;color:rgba(255,255,255,0.4)}
+.offer-price strong{font-size:19px;color:var(--gold);font-family:'Cormorant Garamond',serif;font-weight:300}
+.offer-link{
+  font-size:11px;color:var(--green);letter-spacing:0.5px;cursor:pointer;
+  transition:letter-spacing 0.2s;
+}
+.offer-card:hover .offer-link{letter-spacing:1px}
+
+/* ── EXPERIENCE SECTION ──────────────────────────── */
+.exp-section{
+  padding:5.5rem 2.5rem;
+  background:rgba(255,255,255,0.02);
+  border-top:1px solid rgba(255,255,255,0.04);
+}
+.exp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:3.5rem}
+.exp-item{
+  text-align:center;padding:2.5rem 1.5rem;
+  border:1px solid rgba(255,255,255,0.05);border-radius:5px;
+  transition:all 0.3s;position:relative;overflow:hidden;
+}
+.exp-item::before{
+  content:'';position:absolute;bottom:0;left:0;right:0;
+  height:2px;background:linear-gradient(90deg,transparent,var(--green),transparent);
+  transform:scaleX(0);transition:transform 0.4s ease;
+}
+.exp-item:hover{
+  background:rgba(29,158,117,0.04);
+  border-color:rgba(29,158,117,0.2);
+  transform:translateY(-4px);
+}
+.exp-item:hover::before{transform:scaleX(1)}
+.exp-icon{
+  width:60px;height:60px;
+  border:1px solid rgba(201,168,76,0.35);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 1.4rem;font-size:24px;
+  transition:border-color 0.3s, transform 0.3s;
+}
+.exp-item:hover .exp-icon{border-color:rgba(201,168,76,0.7);transform:rotate(5deg) scale(1.05)}
+.exp-title{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:400;color:#fff;margin-bottom:10px}
+.exp-text{font-size:12px;color:rgba(255,255,255,0.42);line-height:1.65}
+
+/* ── PROMO BANNER ────────────────────────────────── */
+.promo-banner{
+  margin:0 2.5rem;border-radius:5px;overflow:hidden;
+  position:relative;height:210px;
+  display:flex;align-items:center;justify-content:space-between;padding:0 3.5rem;
+}
+.promo-bg{
+  position:absolute;inset:0;
+  background:linear-gradient(100deg,#0b3220 10%,var(--green) 55%,#b8902e);
+}
+.promo-bg::after{
+  content:'';position:absolute;inset:0;
+  background:url("pattern_2.svg") center/cover;
+}
+.promo-content{position:relative;z-index:1}
+.promo-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-bottom:10px}
+.promo-title{font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:300;color:#fff;line-height:1.08}
+.promo-title em{font-style:italic}
+.promo-sub{font-size:13px;color:rgba(255,255,255,0.72);margin-top:7px}
+.promo-cta{
+  position:relative;z-index:1;background:#fff;color:var(--dark);border:none;
+  padding:16px 36px;font-size:14px;font-weight:600;cursor:pointer;
+  font-family:'Outfit',sans-serif;border-radius:3px;white-space:nowrap;
+  transition:all 0.25s;
+}
+.promo-cta:hover{background:#f0f0f0;transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.2)}
+
+/* ── TESTIMONIALS (NEW) ──────────────────────────── */
+.testimonials{padding:5.5rem 2.5rem;background:var(--darker);border-top:1px solid rgba(255,255,255,0.04)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:3.5rem}
+.testi-card{
+  padding:2rem;
+  border:1px solid rgba(255,255,255,0.07);
+  border-radius:5px;
+  background:rgba(255,255,255,0.025);
+  position:relative;
+  transition:all 0.3s;
+}
+.testi-card:hover{border-color:rgba(201,168,76,0.2);background:rgba(255,255,255,0.04)}
+.testi-stars{color:var(--gold);font-size:14px;letter-spacing:2px;margin-bottom:1rem}
+.testi-text{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:18px;color:rgba(255,255,255,0.75);line-height:1.55;margin-bottom:1.5rem;
+}
+.testi-quote-mark{
+  position:absolute;top:1.5rem;right:1.75rem;
+  font-family:'Cormorant Garamond',serif;font-size:80px;font-weight:300;
+  color:rgba(201,168,76,0.1);line-height:1;
+}
+.testi-author{display:flex;align-items:center;gap:12px}
+.testi-avatar{
+  width:40px;height:40px;border-radius:50%;
+  background:linear-gradient(135deg,var(--green-dark),var(--green));
+  display:flex;align-items:center;justify-content:center;
+  font-weight:600;font-size:14px;flex-shrink:0;
+}
+.testi-name{font-size:14px;color:#fff;font-weight:500}
+.testi-from{font-size:11px;color:rgba(255,255,255,0.4);margin-top:2px;letter-spacing:0.3px}
+
+/* ── FOOTER ──────────────────────────────────────── */
+.footer{background:var(--darker);border-top:1px solid rgba(255,255,255,0.05);padding:4rem 2.5rem 2rem}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:3rem}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:600;color:#fff;margin-bottom:14px}
+.footer-logo span{color:var(--gold)}
+.footer-desc{font-size:12px;color:rgba(255,255,255,0.32);line-height:1.75;margin-bottom:1.75rem;max-width:280px}
+.footer-social{display:flex;gap:10px}
+.social-btn{
+  width:34px;height:34px;border:1px solid rgba(255,255,255,0.12);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;
+  font-size:14px;transition:all 0.2s;
+}
+.social-btn:hover{border-color:rgba(201,168,76,0.5);color:var(--gold);background:rgba(201,168,76,0.05)}
+.footer-col-title{
+  font-size:10px;font-weight:500;letter-spacing:2.5px;text-transform:uppercase;
+  color:rgba(255,255,255,0.45);margin-bottom:16px;
+}
+.footer-link{
+  display:block;font-size:12px;color:rgba(255,255,255,0.35);
+  margin-bottom:9px;cursor:pointer;transition:color 0.2s;
+}
+.footer-link:hover{color:rgba(255,255,255,0.75)}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,0.05);
+  padding-top:1.75rem;display:flex;justify-content:space-between;align-items:center;
+}
+.footer-legal{font-size:11px;color:rgba(255,255,255,0.2)}
+.footer-payment{font-size:12px;color:var(--gold);letter-spacing:0.3px}
+
+/* ── SCROLL REVEAL ───────────────────────────────── */
+.reveal{
+  opacity:0;transform:translateY(30px);
+  transition:opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:0.1s}
+.reveal-delay-2{transition-delay:0.2s}
+.reveal-delay-3{transition-delay:0.3s}
+
+/* ── MOBILE MENU BTN (shows on small screens) ─────── */
+.mobile-menu-btn{
+  display:none;background:none;border:1px solid rgba(255,255,255,0.2);
+  color:#fff;padding:6px 12px;border-radius:3px;cursor:pointer;font-family:'Outfit',sans-serif;font-size:13px;
+}
+
+@media(max-width:900px){
+  .nav-links{display:none}
+  .hero{flex-direction:column}
+  
+
+
+
+
+
+
+
+
+
+
+.offer-tab.active 
+
+
+
+/* RIGHT CAROUSEL */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:900px){
+  
+  
+  
+  
+}
+</style>
+</head>
+<body>
+
+<!-- RIBBON -->
+<div class="ribbon">
+  🎉 Offre spéciale juin : <strong>−15%</strong> sur toutes les excursions et circuits avec notre bateau · <a href="#">Réservez à partir du 10 juin</a>
+</div>
+
+<!-- NAV -->
+<nav class="nav" id="mainNav">
+  <div class="nav-logo">Cyrflo <span>le Koulou</span></div>
+  <div class="nav-links">
+    <button class="nav-link">Réserver</button>
+    <button class="nav-link">Destinations</button>
+    <button class="nav-link">Cyrflo le Koulou</button>
+    <button class="nav-link">Offres</button>
+    <button class="nav-link">À bord</button>
+    <button class="nav-link">Ma réservation</button>
+  </div>
+  <div class="nav-right">
+    <span class="nav-tel">+242 06 905 24 99</span>
+    <button class="nav-cta">S'identifier</button>
+    <button class="mobile-menu-btn">Menu</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grain"></div>
+
+  <!-- Animated rivers -->
+  <svg class="hero-rivers" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path class="river-path" d="M-100 500 Q200 440 400 480 Q620 520 900 460 Q1100 420 1540 470" stroke="rgba(255,255,255,0.12)" stroke-width="2" fill="none"/>
+    <path class="river-path" d="M-100 530 Q200 475 400 510 Q620 548 900 490 Q1100 455 1540 500" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" fill="none"/>
+    <path class="river-path" d="M-100 560 Q200 505 400 540 Q620 575 900 520 Q1100 485 1540 530" stroke="rgba(201,168,76,0.08)" stroke-width="1" fill="none"/>
+    <!-- Decorative circles -->
+    <circle cx="1100" cy="160" r="120" stroke="rgba(201,168,76,0.06)" stroke-width="1" fill="none"/>
+    <circle cx="1100" cy="160" r="85" stroke="rgba(201,168,76,0.04)" stroke-width="1" fill="none"/>
+    <!-- Small boat silhouette -->
+    <path d="M680 300 L700 285 L730 285 L740 300 Z" fill="rgba(255,255,255,0.06)"/>
+    <path d="M700 285 L715 260 L715 285Z" fill="rgba(255,255,255,0.04)"/>
+  </svg>
+
+  <!-- Floating particles -->
+  <div class="particles" id="particles"></div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Tourisme fluvial · République du Congo</div>
+    <h1 class="hero-title">Voyagez sur le<br><em>fleuve Congo</em></h1>
+    <p class="hero-sub">Traversées Brazzaville–Kinshasa, excursions dans les Gorges du Koulou, croisières privées. Une expérience unique au cœur de l'Afrique centrale.</p>
+    <div class="hero-btns">
+      <button class="btn-hero-primary" onclick="document.getElementById('searchSection').scrollIntoView({behavior:'smooth'})">Rechercher une traversée</button>
+      <button class="btn-hero-ghost">Découvrir nos destinations</button>
+    </div>
+    <div class="scroll-hint" style="position:absolute;bottom:2rem;right:2.5rem">
+      <span>Défiler</span>
+      <div class="scroll-line"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SEARCH BAR -->
+<div id="searchSection">
+  <div class="search-wrap" style="padding:0 2.5rem">
+    <div class="search-bar">
+      <div class="search-field">
+        <div class="sf-label">Destination / Service</div>
+        <select class="sf-select">
+          <option value="">Toutes les destinations</option>
+          <option>Traversée Brazzaville–Kinshasa</option>
+          <option>Excursion privée</option>
+          <option>Croisière privée sur le Congo</option>
+          <option>Circuit touristique 2 jours</option>
+          <option>Kintele</option>
+          <option>Maloukou</option>
+          <option>Île Mbamou</option>
+          <option>Oyo</option>
+        </select>
+      </div>
+      <div class="search-field">
+        <div class="sf-label">Port de départ</div>
+        <select class="sf-select">
+          <option>Tous les ports</option>
+          <option>Port de Brazzaville</option>
+          <option>Port de Kinshasa</option>
+        </select>
+      </div>
+      <div class="search-field">
+        <div class="sf-label">Date de départ</div>
+        <input type="date" style="border:none;background:none;font-size:14px;color:#1a2420;font-family:'Outfit',sans-serif;width:100%;cursor:pointer;outline:none">
+      </div>
+      <div class="search-field">
+        <div class="sf-label">Passagers</div>
+        <select class="sf-select">
+          <option>1 passager</option>
+          <option>2 passagers</option>
+          <option>3 passagers</option>
+          <option>4 passagers</option>
+          <option>5+ passagers</option>
+          <option>Groupe / Scolaire</option>
+        </select>
+      </div>
+      <button class="search-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        Rechercher
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat-item reveal">
+    <div class="stat-n" data-target="2" data-suffix="">0</div>
+    <div class="stat-l">Années d'expérience</div>
+  </div>
+  <div class="stat-item reveal reveal-delay-1">
+    <div class="stat-n" data-target="48000" data-suffix="K" data-divide="1000">0</div>
+    <div class="stat-l">Passagers transportés</div>
+  </div>
+  <div class="stat-item reveal reveal-delay-2">
+    <div class="stat-n" data-target="8" data-suffix="">0</div>
+    <div class="stat-l">Destinations fluviales</div>
+  </div>
+  <div class="stat-item reveal reveal-delay-3">
+    <div class="stat-n" data-target="99" data-suffix="%">0</div>
+    <div class="stat-l">Satisfaction clients</div>
+  </div>
+</div>
+
+<!-- DESTINATIONS -->
+<section class="section">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-eyebrow">Explorez le Congo</div>
+      <h2 class="section-title">Nos <em>destinations</em></h2>
+    </div>
+    <button class="see-all">Toutes les destinations →</button>
+  </div>
+  <div class="dest-grid">
+    <div class="dest-card big reveal" style="background:none"><div style="position:absolute;inset:0;background-image:url('brazzaville_kinshasa.jpeg');background-size:cover;background-position:center"></div>
+      <div class="card-deco">
+        <svg viewBox="0 0 400 600" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <path d="M0 400 Q100 350 200 380 Q300 410 400 360" stroke="white" stroke-width="1.5" fill="none" opacity="0.4"/>
+          <path d="M0 430 Q100 380 200 410 Q300 440 400 390" stroke="white" stroke-width="1" fill="none" opacity="0.25"/>
+          <circle cx="320" cy="100" r="80" stroke="rgba(201,168,76,0.2)" stroke-width="1" fill="none"/>
+          <path d="M150 80 L180 40 L210 80 L195 80 L195 120 L165 120 L165 80Z" fill="rgba(255,255,255,0.06)"/>
+        </svg>
+      </div>
+      <div class="dest-overlay"></div>
+      <div class="dest-tag">Plus populaire</div>
+      <div class="dest-content">
+        <div class="dest-label">Traversée inter-capitale</div>
+        <div class="dest-name">Brazzaville<br>↔ Kinshasa</div>
+        <div class="dest-price">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          Dès 110 000 FCFA / personne
+        </div>
+      </div>
+    </div>
+    <div class="dest-card small reveal reveal-delay-1" style="background:none"><div style="position:absolute;inset:0;background-image:url('fleuve_congo.png');background-size:cover;background-position:center"></div>
+      <div class="card-deco">
+        <svg viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <path d="M20 180 Q60 140 100 160 Q140 180 180 150 Q220 120 280 140" stroke="white" stroke-width="1" fill="none" opacity="0.3"/>
+          <path d="M60 60 L90 20 L120 60 L105 60 L105 100 L75 100 L75 60Z" fill="rgba(255,255,255,0.07)"/>
+        </svg>
+      </div>
+      <div class="dest-overlay"></div>
+      <div class="dest-content">
+        <div class="dest-label">Nature & aventure</div>
+        <div class="dest-name">Fleuve Congo</div>
+        <div class="dest-price">Dès 15 000 FCFA</div>
+      </div>
+    </div>
+    <div class="dest-card small reveal reveal-delay-2" style="background:none"><div style="position:absolute;inset:0;background-image:url('excursion_privee_dest.png');background-size:cover;background-position:center"></div>
+      <div class="card-deco">
+        <svg viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <circle cx="150" cy="120" r="70" stroke="rgba(201,168,76,0.15)" stroke-width="1" fill="none"/>
+          <circle cx="150" cy="120" r="50" stroke="rgba(201,168,76,0.1)" stroke-width="1" fill="none"/>
+          <path d="M0 160 Q75 130 150 150 Q225 170 300 140" stroke="white" stroke-width="1" fill="none" opacity="0.2"/>
+        </svg>
+      </div>
+      <div class="dest-overlay"></div>
+      <div class="dest-content">
+        <div class="dest-label">Expérience premium</div>
+        <div class="dest-name">Excursion privée</div>
+        <div class="dest-price">Dès 45 000 FCFA</div>
+      </div>
+    </div>
+    <div class="dest-card small reveal reveal-delay-1" style="background:none"><div style="position:absolute;inset:0;background-image:url('kintele.jpeg');background-size:cover;background-position:center top"></div>
+      <div class="dest-overlay"></div>
+      <div class="dest-content">
+        <div class="dest-label">Culture & patrimoine</div>
+        <div class="dest-name">Kintele</div>
+        <div class="dest-price">Sur devis</div>
+      </div>
+    </div>
+    <div class="dest-card small reveal reveal-delay-2" style="background:none"><div style="position:absolute;inset:0;background-image:url('circuit_2jours.webp');background-size:cover;background-position:center"></div>
+      <div class="dest-overlay"></div>
+      <div class="dest-content">
+        <div class="dest-label">Multi-jours</div>
+        <div class="dest-name">Circuit 2 jours</div>
+        <div class="dest-price">Dès 35 000 FCFA</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO BANNER -->
+<div class="promo-banner reveal">
+  <div class="promo-bg"></div>
+  <div class="promo-content">
+    <div class="promo-label">Offre exclusive · Juin 2026</div>
+    <div class="promo-title">KPM Koulou Days<br><em>−15% sur tout</em></div>
+    <div class="promo-sub">Avec le code <strong>KOULOU15</strong> · À partir du 10 juin</div>
+  </div>
+  <button class="promo-cta">Réserver maintenant →</button>
+</div>
+
+<!-- OFFERS -->
+<section class="section">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-eyebrow">Nos meilleures offres</div>
+      <h2 class="section-title">Voyagez <em>malin</em></h2>
+    </div>
+    <button class="see-all">Toutes les offres →</button>
+  </div>
+  <div class="offers-grid">
+    <div class="offer-card reveal">
+      <div class="offer-img" style="background-image:url('brazzaville_kinshasa.jpeg');background-size:cover;background-position:center">
+        <div class="offer-img-inner"></div>
+      </div>
+      <div class="offer-body">
+        <span class="offer-badge">Dernière minute</span>
+        <div class="offer-title">Traversée express<br>Congo–Kinshasa</div>
+        <div class="offer-desc">Départ immédiat. Dernières places disponibles sur la liaison inter-capitale la plus rapide d'Afrique centrale.</div>
+        <div class="offer-footer">
+          <div class="offer-price">Dès <strong>110 000 FCFA</strong></div>
+          <span class="offer-link">Réserver →</span>
+        </div>
+      </div>
+    </div>
+    <div class="offer-card reveal reveal-delay-1">
+      <div class="offer-img" style="background-image:url('nord_congo.jpeg');background-size:cover;background-position:center">
+        <div class="offer-img-inner"></div>
+      </div>
+      <div class="offer-body">
+        <span class="offer-badge gold">−15% code KOULOU15</span>
+        <div class="offer-title">Excursion au Nord<br>Congo</div>
+        <div class="offer-desc">Journée complète dans une ville au choix au nord du Congo. Guide local, pique-nique et visite inclus.</div>
+        <div class="offer-footer">
+          <div class="offer-price">Sur <strong>Devis</strong></div>
+          <span class="offer-link">Réserver →</span>
+        </div>
+      </div>
+    </div>
+    <div class="offer-card reveal reveal-delay-2">
+      <div class="offer-img" style="background-image:url('circuit_2jours.webp');background-size:cover;background-position:center top">
+        <div class="offer-img-inner"></div>
+      </div>
+      <div class="offer-body">
+        <span class="offer-badge" style="background:rgba(201,168,76,0.15);color:var(--gold);border:1px solid rgba(201,168,76,0.3)">Premium</span>
+        <div class="offer-title">Excursion privée</div>
+        <div class="offer-desc">Privatisez votre embarcation pour une expérience inoubliable sur le fleuve Congo. Champagne et buffet inclus.</div>
+        <div class="offer-footer">
+          <div class="offer-price">Dès <strong>45 000 FCFA</strong></div>
+          <span class="offer-link">Découvrir →</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="exp-section">
+  <div style="max-width:600px">
+    <div class="section-eyebrow">Pourquoi nous choisir</div>
+    <h2 class="section-title">L'expérience <em>Cyrflo</em></h2>
+  </div>
+  <div class="exp-grid">
+    <div class="exp-item reveal">
+      <div class="exp-icon">⚓</div>
+      <div class="exp-title">Flotte certifiée</div>
+      <div class="exp-text">Embarcations contrôlées et certifiées par les autorités fluviales du Congo. Sécurité maximale.</div>
+    </div>
+    <div class="exp-item reveal reveal-delay-1">
+      <div class="exp-icon">📱</div>
+      <div class="exp-title">Billet digital QR</div>
+      <div class="exp-text">Réservez en ligne, payez par Mobile Money, recevez votre billet sur WhatsApp en 2 minutes.</div>
+    </div>
+    <div class="exp-item reveal reveal-delay-2">
+      <div class="exp-icon">🌿</div>
+      <div class="exp-title">Tourisme durable</div>
+      <div class="exp-text">Engagés pour la préservation du fleuve Congo et des écosystèmes de la forêt équatoriale.</div>
+    </div>
+    <div class="exp-item reveal reveal-delay-3">
+      <div class="exp-icon">🤝</div>
+      <div class="exp-title">Équipe locale</div>
+      <div class="exp-text">Guides et équipages congolais formés, passionnés, fiers de partager leur patrimoine fluvial.</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS (NEW) -->
+<section class="testimonials">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-eyebrow">Ils nous font confiance</div>
+      <h2 class="section-title">Avis de <em>voyageurs</em></h2>
+    </div>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card reveal">
+      <div class="testi-quote-mark">"</div>
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-text">La traversée Brazzaville–Kinshasa avec Cyrflo était rapide, confortable et sécurisée. L'équipage professionnel et le fleuve majestueux… une expérience inoubliable.</div>
+      <div class="testi-author">
+        <div class="testi-avatar">CM</div>
+        <div>
+          <div class="testi-name">Christelle Mayela</div>
+          <div class="testi-from">Brazzaville · Traversée express Congo–Kinshasa</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card reveal reveal-delay-1">
+      <div class="testi-quote-mark">"</div>
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-text">L'excursion au Nord Congo était une découverte totale. Le guide local nous a emmenés dans des endroits magnifiques, le pique-nique au bord du fleuve était parfait.</div>
+      <div class="testi-author">
+        <div class="testi-avatar" style="background:linear-gradient(135deg,#6b4a1a,#c9a84c)">RB</div>
+        <div>
+          <div class="testi-name">Roland Bouanga</div>
+          <div class="testi-from">Pointe-Noire · Excursion au Nord Congo</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card reveal reveal-delay-2">
+      <div class="testi-quote-mark">"</div>
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-text">Nous avons privatisé le bateau pour notre anniversaire de mariage. Champagne, buffet, coucher de soleil sur le Congo… Cyrflo a rendu ce moment absolument magique.</div>
+      <div class="testi-author">
+        <div class="testi-avatar" style="background:linear-gradient(135deg,#2a1a6b,#4a1a8b)">NK</div>
+        <div>
+          <div class="testi-name">Nadège & Kevin</div>
+          <div class="testi-from">Kinshasa · Excursion privée</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">Cyrflo <span>le Koulou</span></div>
+      <div class="footer-desc">La première plateforme de réservation de traversées et d'excursions fluviales en République du Congo. Embarquez pour une expérience unique sur le fleuve Congo.</div>
+      <div class="footer-social">
+        <div class="social-btn">f</div>
+        <div class="social-btn">W</div>
+        <div class="social-btn" style="font-size:12px">in</div>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Services</div>
+      <span class="footer-link">Traversées</span>
+      <span class="footer-link">Excursions</span>
+      <span class="footer-link">Croisières privées</span>
+      <span class="footer-link">Groupes scolaires</span>
+    </div>
+    <div>
+      <div class="footer-col-title">Informations</div>
+      <span class="footer-link">Cyrflo le Koulou</span>
+      <span class="footer-link">Sécurité à bord</span>
+      <span class="footer-link">Horaires & tarifs</span>
+      <span class="footer-link">Conditions générales</span>
+      <span class="footer-link">FAQ</span>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <span class="footer-link">+242 06 905 24 99</span>
+      <span class="footer-link">info@cyrflo-koulou.cg</span>
+      <span class="footer-link">Port de Brazzaville</span>
+      <span class="footer-link" style="margin-top:1rem;color:var(--green)">Mon compte</span>
+      <span class="footer-link" style="color:var(--green)">Gérer ma réservation</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-legal">© 2026 Cyrflo le Koulou · Tous droits réservés · République du Congo</div>
+    <div class="footer-payment">Paiement sécurisé · Mobile Money · CinetPay</div>
+  </div>
+</footer>
+
+<script>
+/* ── NAV scroll ───────────────────────── */
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('mainNav');
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+}, { passive: true });
+
+/* ── Floating particles in hero ──────── */
+(function() {
+  const container = document.getElementById('particles');
+  const count = 18;
+  for (let i = 0; i < count; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    const size = Math.random() * 4 + 1;
+    p.style.cssText = `
+      left:${Math.random() * 100}%;
+      bottom:${Math.random() * 30}%;
+      width:${size}px;height:${size}px;
+      --dur:${6 + Math.random() * 10}s;
+      --delay:${Math.random() * 8}s;
+    `;
+    container.appendChild(p);
+  }
+})();
+
+/* ── Scroll Reveal ───────────────────── */
+const revealEls = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      // Also trigger stat underline
+      if (e.target.classList.contains('stat-item')) {
+        e.target.classList.add('visible');
+      }
+    }
+  });
+}, { threshold: 0.15 });
+revealEls.forEach(el => observer.observe(el));
+
+/* ── Animated counters ───────────────── */
+function animateCounter(el) {
+  const target = parseInt(el.dataset.target);
+  const suffix = el.dataset.suffix || '';
+  const divide = el.dataset.divide ? parseInt(el.dataset.divide) : 1;
+  const duration = 1800;
+  const start = performance.now();
+  function step(now) {
+    const progress = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const value = Math.round(eased * target / divide);
+    el.textContent = value + suffix;
+    if (progress < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+const statObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const num = e.target.querySelector('[data-target]');
+      if (num && !num.dataset.animated) {
+        num.dataset.animated = '1';
+        animateCounter(num);
+      }
+    }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.stat-item').forEach(el => statObserver.observe(el));
+
+// ── Offers carousel + tabs ──────────────────
+(function(){
+  const carousel = document.getElementById('offersCarousel');
+  const cards = carousel ? carousel.querySelectorAll('.offer-card-new') : [];
+  const dotsWrap = document.getElementById('offerDots');
+  const tabs = document.querySelectorAll('.offer-tab');
+  let current = 0;
+  const visible = 2;
+  const total = cards.length;
+
+  // Build dots
+  if(dotsWrap){
+    for(let i=0;i<total;i++){
+      const d = document.createElement('button');
+      d.className = 'carousel-dot' + (i===0?' active':'');
+      d.onclick = ()=>goTo(i);
+      dotsWrap.appendChild(d);
+    }
+  }
+
+  function goTo(idx){
+    current = Math.max(0, Math.min(idx, total - visible));
+    if(carousel){
+      const cardW = cards[0].offsetWidth + 20;
+      carousel.style.transform = `translateX(-${current * cardW}px)`;
+    }
+    // update dots
+    if(dotsWrap){
+      dotsWrap.querySelectorAll('.carousel-dot').forEach((d,i)=>{
+        d.classList.toggle('active', i===current);
+      });
+    }
+    // update tabs
+    tabs.forEach((t,i)=>t.classList.toggle('active', i===current));
+  }
+
+  document.getElementById('offerNext')?.addEventListener('click',()=>goTo(current+1));
+  document.getElementById('offerPrev')?.addEventListener('click',()=>goTo(current-1));
+
+  tabs.forEach(t=>{
+    t.addEventListener('click',()=>goTo(parseInt(t.dataset.tab)));
+  });
+})();
+</script>
+</body>
+</html>
