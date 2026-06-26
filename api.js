@@ -36,13 +36,10 @@ function logout() {
 // ── Vérification si le token JWT est expiré ──
 function isTokenExpired(token) {
   try {
-    // Le token JWT contient 3 parties séparées par des points
-    // La 2ème partie contient les données (payload) encodées en base64
     const payload = JSON.parse(atob(token.split('.')[1]));
-    // exp est en secondes, Date.now() en millisecondes
     return payload.exp * 1000 < Date.now();
   } catch {
-    return true; // Si on ne peut pas lire le token, on le considère expiré
+    return true;
   }
 }
 // ── Fonction utilitaire pour appeler l'API ──
@@ -51,9 +48,17 @@ async function apiRequest(endpoint, options = {}) {
     'Content-Type': 'application/json',
     ...options.headers,
   };
-  // Vérifier si le token est expiré AVANT d'envoyer la requête
+
+  // Les routes de connexion/inscription ne doivent JAMAIS declencher
+  // une deconnexion automatique : un 401 y signifie "identifiants incorrects".
+  const isAuthEndpoint =
+    endpoint.includes('/auth/login') || endpoint.includes('/auth/register');
+
   const token = getToken();
-  if (token) {
+
+  // Pour les routes protegees, on verifie l'expiration AVANT l'envoi.
+  // Pour login/register, on n'attache pas de token (connexion a neuf).
+  if (token && !isAuthEndpoint) {
     if (isTokenExpired(token)) {
       console.warn('⚠️ Token expiré — déconnexion automatique.');
       logout();
@@ -61,22 +66,23 @@ async function apiRequest(endpoint, options = {}) {
     }
     headers['Authorization'] = `Bearer ${token}`;
   }
+
   const response = await fetch(`${API_URL}${endpoint}`, {
     ...options,
     headers,
   });
-  // Si le serveur renvoie 401 :
-  //  - On ne déconnecte (et recharge) QUE si un token existait déjà
-  //    => c'est une vraie session expirée/invalide.
-  //  - Sinon (ex: tentative de connexion sans token avec de mauvais
-  //    identifiants), on laisse passer le message d'erreur du serveur.
-  if (response.status === 401 && token) {
+
+  // 401 sur une route protegee = vraie session invalide -> deconnexion.
+  // 401 sur login/register = mauvais identifiants -> on laisse passer le message.
+  if (response.status === 401 && !isAuthEndpoint) {
     console.warn('⚠️ Session invalide — déconnexion automatique.');
     logout();
     throw new Error('Votre session a expiré. Veuillez vous reconnecter.');
   }
+
   const data = await response.json();
-  // Si l'API renvoie une autre erreur (4xx/5xx), on la propage
+
+  // Toute autre erreur (4xx/5xx) : on propage le message du serveur.
   if (!response.ok) {
     throw new Error(data.message || 'Une erreur est survenue.');
   }
