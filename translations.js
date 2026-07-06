@@ -57,6 +57,28 @@ const TRANSLATIONS = {
     "footer.contact.compte": "Mon compte",
     "footer.contact.reservation": "Gérer ma réservation",
     "footer.copyright": "© 2026 Cyrflo le Koulou · Tous droits réservés · République du Congo",
+
+    // ── PHASE 2 : Titres de pages ──
+    "page.dest.eyebrow": "Explorez le Congo",
+    "page.dest.title": "Nos <em>destinations</em>",
+    "page.dest.sub": "À travers le fleuve Congo, découvrez les plus beaux sites fluviaux de la République du Congo.",
+
+    "page.about.eyebrow": "Notre histoire",
+    "page.about.sub": "La première plateforme de tourisme fluvial en République du Congo.",
+
+    "page.offres.eyebrow": "Nos meilleures offres",
+    "page.offres.title": "Voyagez <em>malin</em>",
+    "page.offres.sub": "Profitez de nos tarifs préférentiels, offres de dernière minute et promotions exclusives.",
+    "page.offres.tab.all": "Toutes les offres",
+
+    "page.bateau.eyebrow": "CyrfloLeKoulou · Notre embarcation",
+
+    // Citation section
+    "quote.eyebrow": "Sur le fleuve Congo",
+    "quote.text": "« Lorsque la nature nous invite à ralentir, nous redécouvrons l'essentiel : notre humanité, nos liens et notre place dans le monde. »",
+
+    // Section valeurs (editorial block 1)
+    "editorial.valeurs.title": "Retrouver les valeurs<br><em style=\"font-style:italic;color:#9dd9c2;\">qui nous rassemblent</em>",
   },
 
   en: {
@@ -112,6 +134,28 @@ const TRANSLATIONS = {
     "footer.contact.compte": "My account",
     "footer.contact.reservation": "Manage my booking",
     "footer.copyright": "© 2026 Cyrflo le Koulou · All rights reserved · Republic of Congo",
+
+    // ── PHASE 2 : Page titles ──
+    "page.dest.eyebrow": "Explore Congo",
+    "page.dest.title": "Our <em>destinations</em>",
+    "page.dest.sub": "Along the Congo River, discover the most beautiful river sites in the Republic of Congo.",
+
+    "page.about.eyebrow": "Our story",
+    "page.about.sub": "The first river tourism platform in the Republic of Congo.",
+
+    "page.offres.eyebrow": "Our best offers",
+    "page.offres.title": "Travel <em>smart</em>",
+    "page.offres.sub": "Enjoy our preferential rates, last-minute deals and exclusive promotions.",
+    "page.offres.tab.all": "All offers",
+
+    "page.bateau.eyebrow": "CyrfloLeKoulou · Our vessel",
+
+    // Quote section
+    "quote.eyebrow": "On the Congo River",
+    "quote.text": "\u201C When nature invites us to slow down, we rediscover what matters: our humanity, our bonds and our place in the world. \u201D",
+
+    // Values section (editorial block 1)
+    "editorial.valeurs.title": "Rediscover the values<br><em style=\"font-style:italic;color:#9dd9c2;\">that bring us together</em>",
   }
 };
 
