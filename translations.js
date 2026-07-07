@@ -145,6 +145,37 @@ const TRANSLATIONS = {
     "abord.tab.confort": "Confort & sécurité",
     "bateau.arg1.desc": "CyrfloLeKoulou effectue la traversée <strong style=\"color:#fff;\">Brazzaville–Kinshasa</strong> en seulement 5 minutes. Fini les longues attentes, les tracas administratifs interminables — montez à bord, et en un clin d'œil vous êtes de l'autre côté du plus grand fleuve d'Afrique centrale.",
     "bateau.arg1.desc.v2": "CyrfloLeKoulou effectue la traversée <strong style=\"color:#fff;\">Brazzaville–Kinshasa</strong> en seulement 5 minutes. Fini les longues attentes — montez à bord, et en un clin d'œil vous êtes de l'autre côté du plus grand fleuve d'Afrique centrale.",
+
+    // ── PHASE 5 : Page A bord ──
+    "abord.tab.title": "Confort & sécurité",
+    "abord.flotte.title": "Flotte certifiée",
+    "abord.flotte.desc.html": "Toutes nos embarcations sont contrôlées et certifiées par les autorités fluviales de la République du Congo. Inspections mensuelles obligatoires. <strong style=\"color:#c9a84c;\">Fait par l'organisme certificateur Digenaf.</strong>",
+    "abord.securite.title": "Équipements de sécurité",
+    "abord.securite.desc": "Gilets de sauvetage homologués pour chaque passager, bouées de sauvetage, trousse de premiers secours et système de communication d'urgence à bord.",
+    "abord.equipage.title": "Équipage qualifié",
+    "abord.equipage.desc": "Capitaines et mariniers diplômés et experimentés sur le fleuve Congo. Formation continue en sécurité fluviale.",
+    "abord.durable.title": "Tourisme durable",
+    "abord.durable.desc": "Engagés pour la préservation du fleuve Congo. Moteurs à faible émission, gestion des déchets à bord.",
+    "abord.capacite.title": "Capacité",
+    "abord.capacite.desc": "Notre bateau dispose de 16 places assises confortables, idéalement réparties pour offrir à chaque passager une vue dégagée sur le fleuve Congo et un espace de voyage agréable.",
+    "abord.accessibilite.title": "Accessibilité",
+    "abord.accessibilite.desc": "Notre bateau est équipé pour les personnes à mobilité réduite. Contactez-nous à l'avance pour organiser votre voyage dans les meilleures conditions.",
+
+    // Stats bar Notre bateau
+    "bateau.stat.places": "Places",
+    "bateau.stat.musique": "Musique",
+    "bateau.stat.certifie": "Certifié",
+    "bateau.stat.qrmobile": "QR Mobile",
+
+    // Argument 2 : Musique
+    "bateau.arg2.title": "Ambiance musicale",
+    "bateau.arg2.cat": "À bord",
+    "bateau.arg2.desc": "Notre sonorisation embarquée diffuse une sélection musicale soignée pour rendre chaque traversée mémorable. Disponible sur demande pour vos événements privés, anniversaires ou sorties entre amis — créez l'ambiance que vous voulez sur le fleuve.",
+
+    // Argument 3 : Confort & vue
+    "bateau.arg3.title": "16 places avec vue",
+    "bateau.arg3.cat": "Panoramique",
+    "bateau.arg3.desc": "Chaque siège est disposé pour offrir une vue dégagée sur le fleuve Congo. Admirez les deux capitales qui se font face, les reflets de l'eau au lever ou coucher du soleil — une expérience visuelle unique que vous ne trouverez nulle part ailleurs.",
   },
 
   en: {
@@ -288,6 +319,37 @@ const TRANSLATIONS = {
     "abord.tab.confort": "Comfort & safety",
     "bateau.arg1.desc": "CyrfloLeKoulou completes the <strong style=\"color:#fff;\">Brazzaville–Kinshasa</strong> crossing in just 5 minutes. No more long waits or endless administrative hassle — step aboard, and in the blink of an eye you're on the other side of Central Africa's largest river.",
     "bateau.arg1.desc.v2": "CyrfloLeKoulou completes the <strong style=\"color:#fff;\">Brazzaville–Kinshasa</strong> crossing in just 5 minutes. No more long waits — step aboard, and in the blink of an eye you're on the other side of Central Africa's largest river.",
+
+    // ── PHASE 5 : On board page ──
+    "abord.tab.title": "Comfort & safety",
+    "abord.flotte.title": "Certified fleet",
+    "abord.flotte.desc.html": "All our vessels are inspected and certified by the river authorities of the Republic of Congo. Mandatory monthly inspections. <strong style=\"color:#c9a84c;\">Certified by Digenaf.</strong>",
+    "abord.securite.title": "Safety equipment",
+    "abord.securite.desc": "Approved life jackets for every passenger, life buoys, first aid kit, and onboard emergency communication system.",
+    "abord.equipage.title": "Qualified crew",
+    "abord.equipage.desc": "Certified and experienced captains and boatmen on the Congo River. Ongoing river safety training.",
+    "abord.durable.title": "Sustainable tourism",
+    "abord.durable.desc": "Committed to preserving the Congo River. Low-emission engines, onboard waste management.",
+    "abord.capacite.title": "Capacity",
+    "abord.capacite.desc": "Our boat has 16 comfortable seats, ideally arranged to give every passenger a clear view of the Congo River and a pleasant travel space.",
+    "abord.accessibilite.title": "Accessibility",
+    "abord.accessibilite.desc": "Our boat is equipped for people with reduced mobility. Contact us in advance to arrange your trip in the best conditions.",
+
+    // Stats bar Our boat
+    "bateau.stat.places": "Seats",
+    "bateau.stat.musique": "Music",
+    "bateau.stat.certifie": "Certified",
+    "bateau.stat.qrmobile": "QR Mobile",
+
+    // Argument 2 : Music
+    "bateau.arg2.title": "Musical ambiance",
+    "bateau.arg2.cat": "On board",
+    "bateau.arg2.desc": "Our onboard sound system plays a carefully curated musical selection to make every crossing memorable. Available on request for private events, birthdays, or outings with friends — create the mood you want on the river.",
+
+    // Argument 3 : Comfort & view
+    "bateau.arg3.title": "16 seats with a view",
+    "bateau.arg3.cat": "Panoramic",
+    "bateau.arg3.desc": "Every seat is arranged to offer a clear view of the Congo River. Admire the two capitals facing each other, the water's reflections at sunrise or sunset — a unique visual experience found nowhere else.",
   }
 };
 
