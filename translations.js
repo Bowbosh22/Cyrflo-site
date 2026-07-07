@@ -200,6 +200,21 @@ const TRANSLATIONS = {
     "editorial.voyage.p1": "Parfois, le plus beau des voyages n'est pas celui qui nous emmène loin. C'est celui qui nous ramène à nous-mêmes.",
     "editorial.voyage.p2.html": "Prendre le temps de respirer. Ressentir. Observer. Partager.<br>Retrouver ce qui compte vraiment.",
     "editorial.voyage.btn": "Commencer le voyage →",
+    "dest.ask.question": "Poser une question",
+    "dest.close.form": "Fermer le formulaire",
+    "dest.duration.icon": "⏱ ",
+
+    // Section Nos valeurs
+    "values.eyebrow": "Nos valeurs",
+    "values.title.html": "Ce qui nous <em>distingue</em>",
+    "values.item1.title": "100% Congolais",
+    "values.item1.text": "Entreprise fondée et gérée par des Congolais, pour valoriser le patrimoine fluvial national.",
+    "values.item2.title": "Innovation numérique",
+    "values.item2.text": "Première plateforme de réservation fluviale digitale au Congo, avec paiement Mobile Money intégré.",
+    "values.item3.title": "Engagement écologique",
+    "values.item3.text": "Préservation du fleuve Congo et de ses écosystèmes au cœur de notre modèle d'entreprise.",
+    "values.item4.title": "Impact local",
+    "values.item4.text": "Emploi d'équipages locaux formés, partenariats avec des guides et artisans des communautés riveraines.",
   },
 
   en: {
@@ -398,6 +413,21 @@ const TRANSLATIONS = {
     "editorial.voyage.p1": "Sometimes, the most beautiful journeys aren't the ones that take us far away. They're the ones that bring us back to ourselves.",
     "editorial.voyage.p2.html": "Taking time to breathe. Feel. Observe. Share.<br>Rediscovering what truly matters.",
     "editorial.voyage.btn": "Start the journey →",
+    "dest.ask.question": "Ask a question",
+    "dest.close.form": "Close form",
+    "dest.duration.icon": "⏱ ",
+
+    // Values section
+    "values.eyebrow": "Our values",
+    "values.title.html": "What sets us <em>apart</em>",
+    "values.item1.title": "100% Congolese",
+    "values.item1.text": "A company founded and run by Congolese people, showcasing the national river heritage.",
+    "values.item2.title": "Digital innovation",
+    "values.item2.text": "The first digital river booking platform in Congo, with integrated Mobile Money payment.",
+    "values.item3.title": "Environmental commitment",
+    "values.item3.text": "Preserving the Congo River and its ecosystems at the heart of our business model.",
+    "values.item4.title": "Local impact",
+    "values.item4.text": "Employing trained local crews, partnerships with guides and artisans from riverside communities.",
   }
 };
 
@@ -459,3 +489,72 @@ document.addEventListener('DOMContentLoaded', function() {
   applyTranslations(lang);
   updateLangButton(lang);
 });
+
+// ══════════════════════════════════════════════════════════
+// DONNEES DESTINATIONS EN ANGLAIS (texte uniquement, pas d'images)
+// ══════════════════════════════════════════════════════════
+const DEST_DATA_EN = {
+  'brazzaville___kinshasa': {
+    nom: 'Brazzaville ↔ Kinshasa',
+    label: 'Inter-capital crossing',
+    prix: 'From 110,000 FCFA / person',
+    duree: '~5 minutes',
+    description: 'The fastest river link between the two closest capitals in the world. Aboard CyrfloLeKoulou, certified by Digenaf, you cross the Congo River in minutes in premium comfort.',
+    activites: ['Fast, secure inter-capital crossing', 'Panoramic view of Brazzaville and Kinshasa', 'Personalized welcome on board', 'Flexible daily departures'],
+    inclus: ['Welcome on board', 'Certified life jacket', 'Qualified crew assistance', 'WhatsApp confirmation ticket']
+  },
+  'excursion_privée': {
+    nom: 'Private excursion',
+    label: 'Premium experience',
+    prix: 'From 45,000 FCFA',
+    duree: 'Custom',
+    description: 'Charter CyrfloLeKoulou for an unforgettable experience on the Congo River. Ideal for birthdays, weddings, corporate outings, or romantic getaways.',
+    activites: ['Private cruise on the Congo River', 'Itinerary customized to your wishes', 'Sunset over the river', 'Music and decoration available'],
+    inclus: ['Full boat charter', 'Dedicated crew', 'Champagne and buffet on request', 'Duration and route of your choice']
+  },
+  'kintele': {
+    nom: 'Kintele',
+    label: 'Culture & heritage',
+    prix: 'Price on request',
+    duree: 'Full day',
+    description: 'Discover the iconic Kintele site from the river, with its internationally renowned sports facilities set in the heart of Congolese nature.',
+    activites: ['Unique view of the Kintele sports complex', 'Cruising on the Congo River', 'Discovering the riverside villages', 'Photography and wildlife watching'],
+    inclus: ['Round-trip river transport', 'Onboard guide', 'Safety equipment', 'Refreshments']
+  },
+  'circuit_2_jours': {
+    nom: '2-day tour',
+    label: 'Multi-day',
+    prix: 'From 35,000 FCFA',
+    duree: '2 days / 1 night',
+    description: 'A two-day immersion in the river landscapes of Congo. This tour takes you to discover the Koulou gorges, riverside villages, and pristine nature.',
+    activites: ['Cruising through the Koulou gorges', 'Visiting riverside villages', 'Hiking and discovering local wildlife', 'Overnight stay at a partner lodge'],
+    inclus: ['Round-trip river transport', 'Accommodation included', 'French-speaking local guide', 'Dinner and breakfast']
+  },
+  'île_mbamou': {
+    nom: 'Mbamou Island',
+    label: 'Wildlife and vegetation',
+    prix: 'From 25,000 FCFA',
+    duree: 'Full day',
+    description: 'Discover the wildlife and vegetation on an island nestled between Brazzaville and Kinshasa. A pristine natural haven, accessible only by river.',
+    activites: ['Exploring the island forest', 'Wildlife and vegetation observation', 'Swimming and relaxing on the shore', 'Picnic by the water'],
+    inclus: ['Round-trip river transport', 'Naturalist guide', 'Picnic included', 'Safety equipment']
+  },
+  'plage_de_sable_fin_brazzaville': {
+    nom: 'Sandy beach',
+    label: 'Beach',
+    prix: 'From 18,000 FCFA',
+    duree: 'Half-day or full day',
+    description: 'Escape to the sandy shores of the Congo River, just minutes from Brazzaville. A relaxing, refreshing break in the heart of nature.',
+    activites: ['Relaxing on the sandy beach', 'Swimming in the river', 'Water activities on request', 'Picnic and dining'],
+    inclus: ['Round-trip river transport', 'Beach access', 'Safety equipment', 'Crew assistance']
+  },
+  'oyo': {
+    nom: 'Oyo',
+    label: 'Discovery',
+    prix: 'Price on request',
+    duree: 'Custom',
+    description: 'Set off to discover Oyo, the birthplace of the President of the Republic, nestled in the heart of the Congolese forest. A journey through history, culture, and nature.',
+    activites: ['Discovering the town of Oyo and its surroundings', 'Immersive river cruising', 'Meeting local communities', 'Exploring the equatorial forest'],
+    inclus: ['River transport', 'Local guide', 'Accommodation depending on package', 'Customizable itinerary']
+  }
+};
