@@ -331,6 +331,22 @@ const TRANSLATIONS = {
     "modal.reserver.submit": "Confirmer la réservation",
     "modal.reserver.success.title": "Réservation confirmée !",
     "modal.reserver.success.text.html": "Votre billet QR vous sera envoyé sur WhatsApp dans 2 minutes. Numéro de réservation : <strong id=\"resaNumConfirm\"></strong>",
+
+    // ── Page Ma reservation ──
+    "resa.page.eyebrow": "Espace client",
+    "resa.page.title.html": "Ma <em>réservation</em>",
+    "resa.page.sub": "Consultez, modifiez ou annulez vos réservations en cours.",
+    "resa.lookup.title": "Accédez à votre réservation",
+    "resa.lookup.sub": "Connectez-vous à votre compte ou entrez votre numéro de réservation pour consulter vos voyages.",
+    "resa.lookup.login": "Se connecter à mon compte",
+    "resa.lookup.or": "— ou —",
+    "resa.lookup.numlabel": "Numéro de réservation",
+    "resa.lookup.numplaceholder": "ex: CYR-2026-00142",
+    "resa.lookup.contactlabel": "Email ou téléphone utilisé lors de la réservation",
+    "resa.lookup.contactplaceholder": "votre@email.com ou +242XXXXXXXXX",
+    "resa.lookup.submit": "Rechercher ma réservation",
+    "resa.results.title": "Vos réservations",
+    "resa.results.newbtn": "+ Nouvelle réservation",
   },
 
   en: {
@@ -660,6 +676,22 @@ const TRANSLATIONS = {
     "modal.reserver.submit": "Confirm booking",
     "modal.reserver.success.title": "Booking confirmed!",
     "modal.reserver.success.text.html": "Your QR ticket will be sent to you on WhatsApp within 2 minutes. Booking number: <strong id=\"resaNumConfirm\"></strong>",
+
+    // ── My booking page ──
+    "resa.page.eyebrow": "Customer area",
+    "resa.page.title.html": "My <em>booking</em>",
+    "resa.page.sub": "View, modify, or cancel your current bookings.",
+    "resa.lookup.title": "Access your booking",
+    "resa.lookup.sub": "Sign in to your account or enter your booking number to view your trips.",
+    "resa.lookup.login": "Sign in to my account",
+    "resa.lookup.or": "— or —",
+    "resa.lookup.numlabel": "Booking number",
+    "resa.lookup.numplaceholder": "e.g. CYR-2026-00142",
+    "resa.lookup.contactlabel": "Email or phone used when booking",
+    "resa.lookup.contactplaceholder": "your@email.com or +242XXXXXXXXX",
+    "resa.lookup.submit": "Find my booking",
+    "resa.results.title": "Your bookings",
+    "resa.results.newbtn": "+ New booking",
   }
 };
 
