@@ -79,6 +79,65 @@ const TRANSLATIONS = {
 
     // Section valeurs (editorial block 1)
     "editorial.valeurs.title": "Retrouver les valeurs<br><em style=\"font-style:italic;color:#9dd9c2;\">qui nous rassemblent</em>",
+
+    // ── PHASE 3 : Modals ──
+    "modal.login.title": "S'identifier",
+    "modal.login.sub": "Accédez à votre espace client Cyrflo",
+    "modal.login.email": "Email",
+    "modal.login.password": "Mot de passe",
+    "modal.login.btn": "Se connecter",
+    "modal.login.noaccount": "Pas encore de compte ? ",
+    "modal.login.create": "Créer un compte",
+    "modal.login.forgot": "Mot de passe oublié ?",
+
+    "modal.register.title": "Créer un compte",
+    "modal.register.sub": "Rejoignez Cyrflo le Koulou",
+    "modal.register.firstname": "Prénom",
+    "modal.register.lastname": "Nom",
+    "modal.register.email": "Email",
+    "modal.register.phone": "Téléphone (WhatsApp)",
+    "modal.register.password": "Mot de passe",
+
+    "modal.reserver.title": "Réserver un voyage",
+    "modal.reserver.sub": "Complétez le formulaire pour finaliser votre réservation",
+    "modal.reserver.destination": "Destination",
+    "modal.reserver.destination.choose": "Choisissez une destination",
+    "modal.reserver.date": "Date de départ",
+    "modal.reserver.heure": "Heure",
+    "modal.reserver.passengers": "Passagers",
+    "modal.reserver.name": "Prénom & Nom",
+    "modal.reserver.phone": "Téléphone WhatsApp",
+
+    // ── PHASE 3 : Cartes offres ──
+    "offer.pro.badge": "Pro",
+    "offer.pro.title": "Événements professionnels",
+    "offer.pro.desc": "Séminaires, team building ou réceptions d'entreprise sur le fleuve Congo. Une expérience unique pour vos collaborateurs et partenaires.",
+    "offer.pro.price.html": "Sur <strong>devis</strong>",
+
+    "offer.circuit.badge": "Nouveau",
+    "offer.circuit.title": "Circuit 2 jours Koulou",
+    "offer.circuit.desc": "Découverte des gorges du Koulou en deux jours. Hébergement inclus.",
+    "offer.circuit.price.html": "Dès <strong>35 000 FCFA</strong>",
+
+    "offer.island.badge": "−15% Code KOULOU15",
+    "offer.island.desc": "Journée sur l'île mystérieuse du Congo. Faune et flore exceptionnelles.",
+    "offer.island.price.html": "Dès <strong>25 000 FCFA</strong>",
+
+    "offer.traversee.badge": "Dernière minute",
+    "offer.traversee.title": "Traversée express Congo–Kinshasa",
+    "offer.traversee.desc": "Départ immédiat. Liaisons quotidiennes Brazzaville–Kinshasa.",
+    "offer.traversee.price.html": "Dès <strong>110 000 FCFA</strong>",
+
+    "offer.privee.badge": "Premium",
+    "offer.privee.title": "Excursion privée",
+    "offer.privee.desc": "Privatisez votre embarcation. Champagne et buffet inclus.",
+    "offer.privee.price.html": "Dès <strong>45 000 FCFA</strong>",
+
+    "offer.scolaire.badge": "Groupe",
+    "offer.scolaire.title": "Groupe scolaire",
+    "offer.scolaire.desc": "Sortie fluviale encadrée pour classes et établissements scolaires. Découverte du fleuve Congo dans un cadre pédagogique et sécurisé.",
+
+    "common.reserver.arrow": "Réserver →",
   },
 
   en: {
@@ -156,6 +215,65 @@ const TRANSLATIONS = {
 
     // Values section (editorial block 1)
     "editorial.valeurs.title": "Rediscover the values<br><em style=\"font-style:italic;color:#9dd9c2;\">that bring us together</em>",
+
+    // ── PHASE 3 : Modals ──
+    "modal.login.title": "Sign in",
+    "modal.login.sub": "Access your Cyrflo customer area",
+    "modal.login.email": "Email",
+    "modal.login.password": "Password",
+    "modal.login.btn": "Sign in",
+    "modal.login.noaccount": "No account yet? ",
+    "modal.login.create": "Create an account",
+    "modal.login.forgot": "Forgot password?",
+
+    "modal.register.title": "Create an account",
+    "modal.register.sub": "Join Cyrflo le Koulou",
+    "modal.register.firstname": "First name",
+    "modal.register.lastname": "Last name",
+    "modal.register.email": "Email",
+    "modal.register.phone": "Phone (WhatsApp)",
+    "modal.register.password": "Password",
+
+    "modal.reserver.title": "Book a trip",
+    "modal.reserver.sub": "Fill out the form to complete your booking",
+    "modal.reserver.destination": "Destination",
+    "modal.reserver.destination.choose": "Choose a destination",
+    "modal.reserver.date": "Departure date",
+    "modal.reserver.heure": "Time",
+    "modal.reserver.passengers": "Passengers",
+    "modal.reserver.name": "First & last name",
+    "modal.reserver.phone": "WhatsApp phone number",
+
+    // ── PHASE 3 : Offer cards ──
+    "offer.pro.badge": "Pro",
+    "offer.pro.title": "Corporate events",
+    "offer.pro.desc": "Seminars, team building or corporate receptions on the Congo River. A unique experience for your colleagues and partners.",
+    "offer.pro.price.html": "Quote on <strong>request</strong>",
+
+    "offer.circuit.badge": "New",
+    "offer.circuit.title": "2-day Koulou tour",
+    "offer.circuit.desc": "Discover the Koulou gorges over two days. Accommodation included.",
+    "offer.circuit.price.html": "From <strong>35,000 FCFA</strong>",
+
+    "offer.island.badge": "−15% Code KOULOU15",
+    "offer.island.desc": "A day on Congo's mysterious island. Exceptional wildlife and vegetation.",
+    "offer.island.price.html": "From <strong>25,000 FCFA</strong>",
+
+    "offer.traversee.badge": "Last minute",
+    "offer.traversee.title": "Express crossing Congo–Kinshasa",
+    "offer.traversee.desc": "Immediate departure. Daily Brazzaville–Kinshasa connections.",
+    "offer.traversee.price.html": "From <strong>110,000 FCFA</strong>",
+
+    "offer.privee.badge": "Premium",
+    "offer.privee.title": "Private excursion",
+    "offer.privee.desc": "Privatize your boat. Champagne and buffet included.",
+    "offer.privee.price.html": "From <strong>45,000 FCFA</strong>",
+
+    "offer.scolaire.badge": "Group",
+    "offer.scolaire.title": "School group",
+    "offer.scolaire.desc": "Supervised river outing for school classes. Discover the Congo River in an educational and safe setting.",
+
+    "common.reserver.arrow": "Book →",
   }
 };
 
