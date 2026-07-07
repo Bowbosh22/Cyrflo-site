@@ -253,6 +253,28 @@ const TRANSLATIONS = {
     "dest.form.submit": "Envoyer sur WhatsApp →",
     "dest.form.success": "✓ Message envoyé ! Nous vous répondons sous 2h.",
     "dest.btn.reserve": "Réserver maintenant →",
+
+    // Filtres galerie
+    "gallery.filter.all": "Tout voir",
+    "gallery.filter.video": "🎬 Vidéos",
+    "gallery.filter.fleuve": "🌊 Le fleuve",
+    "gallery.filter.bateau": "⚓ Notre bateau",
+    "gallery.filter.voyageurs": "👥 Voyageurs",
+    "gallery.filter.destination": "📍 Destinations",
+    "gallery.filter.faune": "🦌 Faune & Flore",
+
+    // Pages FAQ / Conditions - en-tetes
+    "page.faq.eyebrow": "Aide & Questions",
+    "page.faq.title.html": "Questions <em>frequentes</em>",
+    "page.faq.sub": "Tout ce que vous devez savoir avant de voyager avec nous.",
+    "page.conditions.eyebrow": "Informations legales",
+    "page.conditions.title.html": "Conditions <em>generales</em>",
+    "page.conditions.sub": "Mentions legales, politique de confidentialite et conditions generales de vente.",
+
+    // Page Galerie - en-tete
+    "page.galerie.eyebrow": "Galerie",
+    "page.galerie.title.html": "Le fleuve <em>en images</em>",
+    "page.galerie.sub": "Vidéos et photos du Congo, du bateau et de la faune et la flore.",
   },
 
   en: {
@@ -504,6 +526,28 @@ const TRANSLATIONS = {
     "dest.form.submit": "Send via WhatsApp →",
     "dest.form.success": "✓ Message sent! We'll reply within 2 hours.",
     "dest.btn.reserve": "Book now →",
+
+    // Gallery filters
+    "gallery.filter.all": "View all",
+    "gallery.filter.video": "🎬 Videos",
+    "gallery.filter.fleuve": "🌊 The river",
+    "gallery.filter.bateau": "⚓ Our boat",
+    "gallery.filter.voyageurs": "👥 Travelers",
+    "gallery.filter.destination": "📍 Destinations",
+    "gallery.filter.faune": "🦌 Wildlife & Nature",
+
+    // FAQ / Conditions pages - headers
+    "page.faq.eyebrow": "Help & Questions",
+    "page.faq.title.html": "Frequently asked <em>questions</em>",
+    "page.faq.sub": "Everything you need to know before traveling with us.",
+    "page.conditions.eyebrow": "Legal information",
+    "page.conditions.title.html": "Terms & <em>conditions</em>",
+    "page.conditions.sub": "Legal notice, privacy policy, and general terms of sale.",
+
+    // Gallery page - header
+    "page.galerie.eyebrow": "Gallery",
+    "page.galerie.title.html": "The river <em>in pictures</em>",
+    "page.galerie.sub": "Videos and photos of the Congo, our boat, and local wildlife.",
   }
 };
 
