@@ -356,6 +356,28 @@ const TRANSLATIONS = {
     "resa.opt.mbamou": "Île Mbamou — 25 000 FCFA",
     "resa.opt.plage": "Plage de sable fin Brazzaville — 18 000 FCFA",
     "resa.opt.oyo": "Oyo — Sur devis",
+
+    // ── PHASE 15 : Formulaire recherche accueil ──
+    "search.btn.text": "Rechercher",
+
+    "search.opt.b2k": "Traversée Brazzaville–Kinshasa",
+    "search.opt.privee": "Excursion privée",
+    "search.opt.croisiere": "Croisière privée sur le Congo",
+    "search.opt.circuit": "Circuit touristique 2 jours",
+    "search.opt.kintele": "Kintele",
+    "search.opt.plage": "Plage de sable fin Brazzaville",
+    "search.opt.mbamou": "Île Mbamou",
+    "search.opt.oyo": "Oyo",
+
+    "search.opt.port.bzv": "Port de Brazzaville",
+    "search.opt.port.kin": "Port de Kinshasa",
+
+    "search.opt.pass1": "1 passager",
+    "search.opt.pass2": "2 passagers",
+    "search.opt.pass3": "3 passagers",
+    "search.opt.pass4": "4 passagers",
+    "search.opt.pass5plus": "5+ passagers",
+    "search.opt.passgroupe": "Groupe / Scolaire",
   },
 
   en: {
@@ -710,6 +732,28 @@ const TRANSLATIONS = {
     "resa.opt.mbamou": "Mbamou Island — 25,000 FCFA",
     "resa.opt.plage": "Sandy beach, Brazzaville — 18,000 FCFA",
     "resa.opt.oyo": "Oyo — Price on request",
+
+    // ── PHASE 15 : Homepage search form ──
+    "search.btn.text": "Search",
+
+    "search.opt.b2k": "Brazzaville–Kinshasa crossing",
+    "search.opt.privee": "Private excursion",
+    "search.opt.croisiere": "Private cruise on the Congo",
+    "search.opt.circuit": "2-day tourist circuit",
+    "search.opt.kintele": "Kintele",
+    "search.opt.plage": "Sandy beach, Brazzaville",
+    "search.opt.mbamou": "Mbamou Island",
+    "search.opt.oyo": "Oyo",
+
+    "search.opt.port.bzv": "Port of Brazzaville",
+    "search.opt.port.kin": "Port of Kinshasa",
+
+    "search.opt.pass1": "1 passenger",
+    "search.opt.pass2": "2 passengers",
+    "search.opt.pass3": "3 passengers",
+    "search.opt.pass4": "4 passengers",
+    "search.opt.pass5plus": "5+ passengers",
+    "search.opt.passgroupe": "Group / School",
   }
 };
 
