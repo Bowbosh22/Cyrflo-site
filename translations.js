@@ -215,6 +215,26 @@ const TRANSLATIONS = {
     "values.item3.text": "Préservation du fleuve Congo et de ses écosystèmes au cœur de notre modèle d'entreprise.",
     "values.item4.title": "Impact local",
     "values.item4.text": "Emploi d'équipages locaux formés, partenariats avec des guides et artisans des communautés riveraines.",
+
+    // Cartes destinations (page Destinations, grille statique)
+    "destcard.b2k.label": "Traversée inter-capitale",
+    "destcard.b2k.price": "Dès 110 000 FCFA / personne",
+    "destcard.excprivee.label": "Expérience premium",
+    "destcard.excprivee.name": "Excursion privée",
+    "destcard.excprivee.price": "Dès 45 000 FCFA",
+    "destcard.kintele.label": "Culture & patrimoine",
+    "destcard.kintele.price": "Sur devis",
+    "destcard.circuit.label": "Multi-jours",
+    "destcard.circuit.name": "Circuit 2 jours",
+    "destcard.circuit.price": "Dès 35 000 FCFA",
+    "destcard.mbamou.label": "Faune et Flore",
+    "destcard.mbamou.name": "Île Mbamou",
+    "destcard.mbamou.price": "Dès 25 000 FCFA",
+    "destcard.plage.label": "Plage",
+    "destcard.plage.name": "Plage de sable fin Brazzaville",
+    "destcard.plage.price": "Dès 18 000 FCFA",
+    "destcard.oyo.label": "Découverte",
+    "destcard.oyo.price": "Sur devis",
   },
 
   en: {
@@ -428,6 +448,26 @@ const TRANSLATIONS = {
     "values.item3.text": "Preserving the Congo River and its ecosystems at the heart of our business model.",
     "values.item4.title": "Local impact",
     "values.item4.text": "Employing trained local crews, partnerships with guides and artisans from riverside communities.",
+
+    // Destination cards (Destinations page, static grid)
+    "destcard.b2k.label": "Inter-capital crossing",
+    "destcard.b2k.price": "From 110,000 FCFA / person",
+    "destcard.excprivee.label": "Premium experience",
+    "destcard.excprivee.name": "Private excursion",
+    "destcard.excprivee.price": "From 45,000 FCFA",
+    "destcard.kintele.label": "Culture & heritage",
+    "destcard.kintele.price": "Price on request",
+    "destcard.circuit.label": "Multi-day",
+    "destcard.circuit.name": "2-day tour",
+    "destcard.circuit.price": "From 35,000 FCFA",
+    "destcard.mbamou.label": "Wildlife and vegetation",
+    "destcard.mbamou.name": "Mbamou Island",
+    "destcard.mbamou.price": "From 25,000 FCFA",
+    "destcard.plage.label": "Beach",
+    "destcard.plage.name": "Sandy beach, Brazzaville",
+    "destcard.plage.price": "From 18,000 FCFA",
+    "destcard.oyo.label": "Discovery",
+    "destcard.oyo.price": "Price on request",
   }
 };
 
