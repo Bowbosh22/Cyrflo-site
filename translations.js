@@ -311,6 +311,26 @@ const TRANSLATIONS = {
     "faq.contact.question": "Votre question",
     "faq.contact.question.placeholder": "Décrivez votre question en détail...",
     "faq.contact.submit": "Envoyer ma question",
+
+    // ── PHASE 12 : Modals restants ──
+    "modal.login.success.title": "Connexion réussie !",
+    "modal.login.success.text": "Bienvenue sur Cyrflo le Koulou",
+
+    "modal.register.submit": "Créer mon compte",
+    "modal.register.already": "Déjà inscrit ? ",
+    "modal.register.login": "Se connecter",
+    "modal.register.success.title": "Compte créé !",
+    "modal.register.success.text": "Bienvenue dans la famille Cyrflo. Vous pouvez maintenant réserver vos traversées.",
+
+    "modal.reserver.email": "Email",
+    "modal.reserver.promo": "Code promo (optionnel)",
+    "modal.reserver.paymentmethod": "Mode de paiement",
+    "modal.reserver.payment.airtel": "Airtel Money",
+    "modal.reserver.payment.mtn": "MTN MoMo",
+    "modal.reserver.payment.cash": "Cash au départ (Beach Congo)",
+    "modal.reserver.submit": "Confirmer la réservation",
+    "modal.reserver.success.title": "Réservation confirmée !",
+    "modal.reserver.success.text.html": "Votre billet QR vous sera envoyé sur WhatsApp dans 2 minutes. Numéro de réservation : <strong id=\"resaNumConfirm\"></strong>",
   },
 
   en: {
@@ -620,6 +640,26 @@ const TRANSLATIONS = {
     "faq.contact.question": "Your question",
     "faq.contact.question.placeholder": "Describe your question in detail...",
     "faq.contact.submit": "Send my question",
+
+    // ── PHASE 12 : Remaining modals ──
+    "modal.login.success.title": "Login successful!",
+    "modal.login.success.text": "Welcome to Cyrflo le Koulou",
+
+    "modal.register.submit": "Create my account",
+    "modal.register.already": "Already have an account? ",
+    "modal.register.login": "Sign in",
+    "modal.register.success.title": "Account created!",
+    "modal.register.success.text": "Welcome to the Cyrflo family. You can now book your crossings.",
+
+    "modal.reserver.email": "Email",
+    "modal.reserver.promo": "Promo code (optional)",
+    "modal.reserver.paymentmethod": "Payment method",
+    "modal.reserver.payment.airtel": "Airtel Money",
+    "modal.reserver.payment.mtn": "MTN MoMo",
+    "modal.reserver.payment.cash": "Cash at departure (Beach Congo)",
+    "modal.reserver.submit": "Confirm booking",
+    "modal.reserver.success.title": "Booking confirmed!",
+    "modal.reserver.success.text.html": "Your QR ticket will be sent to you on WhatsApp within 2 minutes. Booking number: <strong id=\"resaNumConfirm\"></strong>",
   }
 };
 
