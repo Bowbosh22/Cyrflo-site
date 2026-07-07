@@ -235,6 +235,24 @@ const TRANSLATIONS = {
     "destcard.plage.price": "Dès 18 000 FCFA",
     "destcard.oyo.label": "Découverte",
     "destcard.oyo.price": "Sur devis",
+
+    // Badge le plus populaire
+    "destcard.badge.popular": "Plus populaire",
+
+    // Tiroir destination - template statique
+    "dest.section.acts": "Ce que vous ferez",
+    "dest.section.incl": "Ce qui est inclus",
+    "dest.contact.title": "💬 Poser une question",
+    "dest.form.firstname": "Prénom *",
+    "dest.form.lastname": "Nom *",
+    "dest.form.email": "E-mail *",
+    "dest.form.emailconfirm": "Confirmer l'e-mail *",
+    "dest.form.country": "Pays de résidence *",
+    "dest.form.whatsapp": "WhatsApp (+242...)",
+    "dest.form.message": "Votre question…",
+    "dest.form.submit": "Envoyer sur WhatsApp →",
+    "dest.form.success": "✓ Message envoyé ! Nous vous répondons sous 2h.",
+    "dest.btn.reserve": "Réserver maintenant →",
   },
 
   en: {
@@ -468,6 +486,24 @@ const TRANSLATIONS = {
     "destcard.plage.price": "From 18,000 FCFA",
     "destcard.oyo.label": "Discovery",
     "destcard.oyo.price": "Price on request",
+
+    // Most popular badge
+    "destcard.badge.popular": "Most popular",
+
+    // Destination drawer - static template
+    "dest.section.acts": "What you'll do",
+    "dest.section.incl": "What's included",
+    "dest.contact.title": "💬 Ask a question",
+    "dest.form.firstname": "First name *",
+    "dest.form.lastname": "Last name *",
+    "dest.form.email": "Email *",
+    "dest.form.emailconfirm": "Confirm email *",
+    "dest.form.country": "Country of residence *",
+    "dest.form.whatsapp": "WhatsApp (+242...)",
+    "dest.form.message": "Your question…",
+    "dest.form.submit": "Send via WhatsApp →",
+    "dest.form.success": "✓ Message sent! We'll reply within 2 hours.",
+    "dest.btn.reserve": "Book now →",
   }
 };
 
