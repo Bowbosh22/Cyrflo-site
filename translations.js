@@ -138,6 +138,13 @@ const TRANSLATIONS = {
     "offer.scolaire.desc": "Sortie fluviale encadrée pour classes et établissements scolaires. Découverte du fleuve Congo dans un cadre pédagogique et sécurisé.",
 
     "common.reserver.arrow": "Réserver →",
+
+    // ── PHASE 4 ──
+    "testi.eyebrow": "Ils l'ont vécu",
+    "testi.title.html": "Ce que disent<br><em style=\"font-style:italic;color:#9dd9c2;\">nos voyageurs</em>",
+    "abord.tab.confort": "Confort & sécurité",
+    "bateau.arg1.desc": "CyrfloLeKoulou effectue la traversée <strong style=\"color:#fff;\">Brazzaville–Kinshasa</strong> en seulement 5 minutes. Fini les longues attentes, les tracas administratifs interminables — montez à bord, et en un clin d'œil vous êtes de l'autre côté du plus grand fleuve d'Afrique centrale.",
+    "bateau.arg1.desc.v2": "CyrfloLeKoulou effectue la traversée <strong style=\"color:#fff;\">Brazzaville–Kinshasa</strong> en seulement 5 minutes. Fini les longues attentes — montez à bord, et en un clin d'œil vous êtes de l'autre côté du plus grand fleuve d'Afrique centrale.",
   },
 
   en: {
@@ -274,6 +281,13 @@ const TRANSLATIONS = {
     "offer.scolaire.desc": "Supervised river outing for school classes. Discover the Congo River in an educational and safe setting.",
 
     "common.reserver.arrow": "Book →",
+
+    // ── PHASE 4 ──
+    "testi.eyebrow": "They experienced it",
+    "testi.title.html": "What our<br><em style=\"font-style:italic;color:#9dd9c2;\">travelers say</em>",
+    "abord.tab.confort": "Comfort & safety",
+    "bateau.arg1.desc": "CyrfloLeKoulou completes the <strong style=\"color:#fff;\">Brazzaville–Kinshasa</strong> crossing in just 5 minutes. No more long waits or endless administrative hassle — step aboard, and in the blink of an eye you're on the other side of Central Africa's largest river.",
+    "bateau.arg1.desc.v2": "CyrfloLeKoulou completes the <strong style=\"color:#fff;\">Brazzaville–Kinshasa</strong> crossing in just 5 minutes. No more long waits — step aboard, and in the blink of an eye you're on the other side of Central Africa's largest river.",
   }
 };
 
