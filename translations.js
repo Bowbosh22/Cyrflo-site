@@ -176,6 +176,30 @@ const TRANSLATIONS = {
     "bateau.arg3.title": "16 places avec vue",
     "bateau.arg3.cat": "Panoramique",
     "bateau.arg3.desc": "Chaque siège est disposé pour offrir une vue dégagée sur le fleuve Congo. Admirez les deux capitales qui se font face, les reflets de l'eau au lever ou coucher du soleil — une expérience visuelle unique que vous ne trouverez nulle part ailleurs.",
+
+    // ── PHASE 6 ──
+    // Argument 4 : Privatisation
+    "bateau.arg4.title": "Privatisation",
+    "bateau.arg4.cat": "Sur demande",
+    "bateau.arg4.desc": "Réservez CyrfloLeKoulou en exclusivité pour vos événements privés : anniversaires, mariages, sorties d'entreprise, excursions VIP. Musique personnalisée, champagne et décoration peuvent être organisés sur demande pour une traversée inoubliable.",
+
+    // Page About - section "Pourquoi Cyrflo le Koulou"
+    "about.section.eyebrow": "Notre histoire",
+    "about.why.title.html": "Pourquoi <em>\"Cyrflo le Koulou\"&nbsp;?</em>",
+    "about.p1.html": "Le nom porte notre histoire. <strong style=\"color:#fff\">CYRFLO</strong> est la contraction de nos prénoms, <em>Cyriaque</em> et <em>Florence</em>, couple d'entrepreneurs à l'origine du projet.",
+    "about.p2.html": "Et <strong style=\"color:#fff\">KOULOU</strong>, c'est le diminutif de \"débrouillard\" en lari, notre langue vernaculaire dans le pool. Un clin d'œil à l'esprit de résilience et d'ingéniosité du sud Congo et de l'Afrique de l'ouest qui nous anime au quotidien.",
+    "about.p3": "Porté par cette double identité, le projet ne suit qu'une seule logique : avancer, construire et impacter durablement.",
+    "about.p4": "Plus qu'un transport, c'est un vrai lien entre les populations des deux rives surtout et de tout passager venu du monde entier.",
+
+    // Editorial "Une rencontre avec le vivant"
+    "editorial.rencontre.p1": "Chaque arbre, chaque rivière, chaque horizon raconte une histoire plus ancienne que nous. En nous rapprochant de la nature, nous retrouvons un sentiment d'appartenance. Nous comprenons que nous faisons partie d'un tout plus vaste, plus riche et plus fragile.",
+    "editorial.rencontre.p2": "Cette connexion nourrit l'émerveillement, l'humilité et la gratitude.",
+
+    // Editorial "Un voyage intérieur"
+    "editorial.voyage.title.html": "Un voyage<br><em style=\"font-style:italic;color:#9dd9c2;\">intérieur</em>",
+    "editorial.voyage.p1": "Parfois, le plus beau des voyages n'est pas celui qui nous emmène loin. C'est celui qui nous ramène à nous-mêmes.",
+    "editorial.voyage.p2.html": "Prendre le temps de respirer. Ressentir. Observer. Partager.<br>Retrouver ce qui compte vraiment.",
+    "editorial.voyage.btn": "Commencer le voyage →",
   },
 
   en: {
@@ -350,6 +374,30 @@ const TRANSLATIONS = {
     "bateau.arg3.title": "16 seats with a view",
     "bateau.arg3.cat": "Panoramic",
     "bateau.arg3.desc": "Every seat is arranged to offer a clear view of the Congo River. Admire the two capitals facing each other, the water's reflections at sunrise or sunset — a unique visual experience found nowhere else.",
+
+    // ── PHASE 6 ──
+    // Argument 4 : Private charter
+    "bateau.arg4.title": "Private charter",
+    "bateau.arg4.cat": "On request",
+    "bateau.arg4.desc": "Book CyrfloLeKoulou exclusively for your private events: birthdays, weddings, corporate outings, VIP excursions. Custom music, champagne and decoration can be arranged on request for an unforgettable crossing.",
+
+    // About page - "Why Cyrflo le Koulou" section
+    "about.section.eyebrow": "Our story",
+    "about.why.title.html": "Why <em>\"Cyrflo le Koulou\"&nbsp;?</em>",
+    "about.p1.html": "The name carries our story. <strong style=\"color:#fff\">CYRFLO</strong> is a contraction of our first names, <em>Cyriaque</em> and <em>Florence</em>, the entrepreneur couple behind the project.",
+    "about.p2.html": "And <strong style=\"color:#fff\">KOULOU</strong> is short for \"resourceful\" in Lari, our vernacular language in the Pool region. A nod to the spirit of resilience and ingenuity of southern Congo and West Africa that drives us every day.",
+    "about.p3": "Carried by this dual identity, the project follows a single logic: move forward, build, and make a lasting impact.",
+    "about.p4": "More than transportation, it's a real link between the populations of both banks, and every passenger who comes from around the world.",
+
+    // Editorial "A meeting with the living"
+    "editorial.rencontre.p1": "Every tree, every river, every horizon tells a story older than us. By connecting with nature, we rediscover a sense of belonging. We understand that we are part of something vaster, richer, and more fragile.",
+    "editorial.rencontre.p2": "This connection nurtures wonder, humility, and gratitude.",
+
+    // Editorial "An inner journey"
+    "editorial.voyage.title.html": "An inner<br><em style=\"font-style:italic;color:#9dd9c2;\">journey</em>",
+    "editorial.voyage.p1": "Sometimes, the most beautiful journeys aren't the ones that take us far away. They're the ones that bring us back to ourselves.",
+    "editorial.voyage.p2.html": "Taking time to breathe. Feel. Observe. Share.<br>Rediscovering what truly matters.",
+    "editorial.voyage.btn": "Start the journey →",
   }
 };
 
