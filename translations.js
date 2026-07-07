@@ -347,6 +347,15 @@ const TRANSLATIONS = {
     "resa.lookup.submit": "Rechercher ma réservation",
     "resa.results.title": "Vos réservations",
     "resa.results.newbtn": "+ Nouvelle réservation",
+
+    // Options destination formulaire reservation
+    "resa.opt.b2k": "Traversée Brazzaville–Kinshasa — 110 000 FCFA",
+    "resa.opt.privee": "Excursion privée — 45 000 FCFA",
+    "resa.opt.croisiere": "Croisière privée sur le Congo — Sur devis",
+    "resa.opt.circuit": "Circuit touristique 2 jours — 35 000 FCFA",
+    "resa.opt.mbamou": "Île Mbamou — 25 000 FCFA",
+    "resa.opt.plage": "Plage de sable fin Brazzaville — 18 000 FCFA",
+    "resa.opt.oyo": "Oyo — Sur devis",
   },
 
   en: {
@@ -692,6 +701,15 @@ const TRANSLATIONS = {
     "resa.lookup.submit": "Find my booking",
     "resa.results.title": "Your bookings",
     "resa.results.newbtn": "+ New booking",
+
+    // Reservation form destination options
+    "resa.opt.b2k": "Brazzaville–Kinshasa crossing — 110,000 FCFA",
+    "resa.opt.privee": "Private excursion — 45,000 FCFA",
+    "resa.opt.croisiere": "Private cruise on the Congo — Price on request",
+    "resa.opt.circuit": "2-day tourist circuit — 35,000 FCFA",
+    "resa.opt.mbamou": "Mbamou Island — 25,000 FCFA",
+    "resa.opt.plage": "Sandy beach, Brazzaville — 18,000 FCFA",
+    "resa.opt.oyo": "Oyo — Price on request",
   }
 };
 
