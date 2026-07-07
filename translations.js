@@ -378,6 +378,25 @@ const TRANSLATIONS = {
     "search.opt.pass4": "4 passagers",
     "search.opt.pass5plus": "5+ passagers",
     "search.opt.passgroupe": "Groupe / Scolaire",
+
+    // ── PHASE 16 ──
+    "editorial.rencontre.title.html": "Une rencontre<br><em style=\"font-style:italic;color:#9dd9c2;\">avec le vivant</em>",
+
+    // Stats bar accueil
+    "stats.home.experience": "Années d'expérience",
+    "stats.home.passagers": "Passagers transportés",
+    "stats.home.destinations": "Destinations fluviales",
+    "stats.home.satisfaction": "Satisfaction clients",
+
+    // Section Qui sommes-nous (About page)
+    "about.qsn.eyebrow": "Qui sommes-nous",
+    "about.qsn.title.html": "Une passion pour <em>le fleuve</em>",
+    "about.qsn.p1": "Cyrflo le Koulou est née d'une vision simple : rendre le tourisme fluvial accessible à tous les Congolais et aux visiteurs du monde entier. Fondée en 2024 à Brazzaville, notre entreprise est la première à proposer une plateforme numérique complète pour la réservation de traversées et d'excursions sur le fleuve Congo.",
+    "about.qsn.p2": "Avec plus de 23 000 passagers transportés en deux ans d'existence, Cyrflo le Koulou s'est imposée comme la référence du tourisme fluvial au Kongo.",
+    "about.qsn.stat.fondee": "Fondée à Brazzaville",
+    "about.qsn.stat.passagers": "Passagers transportés",
+    "about.qsn.stat.destinations": "Destinations",
+    "about.qsn.stat.satisfaction": "Satisfaction",
   },
 
   en: {
@@ -754,6 +773,25 @@ const TRANSLATIONS = {
     "search.opt.pass4": "4 passengers",
     "search.opt.pass5plus": "5+ passengers",
     "search.opt.passgroupe": "Group / School",
+
+    // ── PHASE 16 ──
+    "editorial.rencontre.title.html": "A meeting<br><em style=\"font-style:italic;color:#9dd9c2;\">with the living</em>",
+
+    // Homepage stats bar
+    "stats.home.experience": "Years of experience",
+    "stats.home.passagers": "Passengers carried",
+    "stats.home.destinations": "River destinations",
+    "stats.home.satisfaction": "Customer satisfaction",
+
+    // Who we are section (About page)
+    "about.qsn.eyebrow": "Who we are",
+    "about.qsn.title.html": "A passion for <em>the river</em>",
+    "about.qsn.p1": "Cyrflo le Koulou was born from a simple vision: making river tourism accessible to all Congolese people and visitors from around the world. Founded in 2024 in Brazzaville, our company is the first to offer a complete digital platform for booking crossings and excursions on the Congo River.",
+    "about.qsn.p2": "With over 23,000 passengers carried in two years of existence, Cyrflo le Koulou has established itself as the benchmark for river tourism in Congo.",
+    "about.qsn.stat.fondee": "Founded in Brazzaville",
+    "about.qsn.stat.passagers": "Passengers carried",
+    "about.qsn.stat.destinations": "Destinations",
+    "about.qsn.stat.satisfaction": "Satisfaction",
   }
 };
 
