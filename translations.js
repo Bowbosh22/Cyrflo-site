@@ -397,6 +397,77 @@ const TRANSLATIONS = {
     "about.qsn.stat.passagers": "Passagers transportés",
     "about.qsn.stat.destinations": "Destinations",
     "about.qsn.stat.satisfaction": "Satisfaction",
+
+    // ── PHASE 17 : Modals offres statiques (page Offres) ──
+    // Traversee
+    "offmodal.traversee.label": "Traversée inter-capitale",
+    "offmodal.traversee.meta": "Dès 110 000 FCFA &nbsp;·&nbsp; ⏱ ~5 minutes",
+    "offmodal.traversee.desc": "La liaison fluviale la plus rapide entre les deux capitales les plus proches du monde. À bord du CyrfloLeKoulou, certifié Digenaf.",
+    "offmodal.traversee.act1": "— Traversée rapide et sécurisée",
+    "offmodal.traversee.act2": "— Vue panoramique sur les deux capitales",
+    "offmodal.traversee.act3": "— Accueil personnalisé à bord",
+    "offmodal.traversee.act4": "— Départs quotidiens flexibles",
+    "offmodal.traversee.inc1": "— Accueil à bord",
+    "offmodal.traversee.inc2": "— Gilet de sauvetage certifié",
+    "offmodal.traversee.inc3": "— Équipage qualifié",
+    "offmodal.traversee.inc4": "— Billet de confirmation WhatsApp",
+
+    // Excursion privee
+    "offmodal.privee.meta": "Dès 45 000 FCFA &nbsp;·&nbsp; Sur mesure",
+    "offmodal.privee.desc": "Privatisez CyrfloLeKoulou pour une expérience inoubliable. Idéal pour anniversaires, mariages, sorties d'entreprise ou escapades romantiques.",
+    "offmodal.privee.act1": "— Croisière privée sur le fleuve Congo",
+    "offmodal.privee.act2": "— Itinéraire personnalisé",
+    "offmodal.privee.act3": "— Coucher de soleil sur le fleuve",
+    "offmodal.privee.act4": "— Musique et décoration possibles",
+    "offmodal.privee.inc1": "— Privatisation complète du bateau",
+    "offmodal.privee.inc2": "— Équipage dédié",
+    "offmodal.privee.inc3": "— Champagne et buffet sur demande",
+    "offmodal.privee.inc4": "— Durée et parcours au choix",
+
+    // Circuit 2 jours
+    "offmodal.circuit.title": "Circuit 2 jours Koulou",
+    "offmodal.circuit.meta": "Dès 35 000 FCFA &nbsp;·&nbsp; 2 jours / 1 nuit",
+    "offmodal.circuit.desc": "Une immersion de deux jours dans les paysages fluviaux du Congo. Découverte des gorges du Koulou, des villages riverains et de la nature préservée.",
+    "offmodal.circuit.act1": "— Navigation dans les gorges du Koulou",
+    "offmodal.circuit.act2": "— Visite de villages riverains",
+    "offmodal.circuit.act3": "— Randonnée et découverte faune locale",
+    "offmodal.circuit.act4": "— Nuit en hébergement partenaire",
+    "offmodal.circuit.inc1": "— Transport fluvial aller-retour",
+    "offmodal.circuit.inc2": "— Hébergement inclus",
+    "offmodal.circuit.inc3": "— Guide local francophone",
+    "offmodal.circuit.inc4": "— Repas du soir et petit-déjeuner",
+
+    // Excursion scolaire
+    "offmodal.scolaire.title": "Excursion scolaire",
+    "offmodal.scolaire.meta": "Sur devis &nbsp;·&nbsp; Journée",
+    "offmodal.scolaire.desc": "Une sortie pédagogique unique sur le fleuve Congo. Idéale pour les écoles primaires, collèges et lycées. Tarifs spéciaux groupes disponibles.",
+    "offmodal.scolaire.act1": "— Découverte du fleuve Congo",
+    "offmodal.scolaire.act2": "— Observation faune et flore",
+    "offmodal.scolaire.act3": "— Sensibilisation à l'environnement",
+    "offmodal.scolaire.act4": "— Activités pédagogiques à bord",
+    "offmodal.scolaire.inc1": "— Transport fluvial aller-retour",
+    "offmodal.scolaire.inc2": "— Encadrement pédagogique",
+    "offmodal.scolaire.inc3": "— Gilets de sauvetage",
+    "offmodal.scolaire.inc4": "— Devis personnalisé sur demande",
+    "offmodal.scolaire.btn": "Demander un devis →",
+
+    // Ile Mbamou
+    "offmodal.mbamou.act1": "— Exploration de la forêt insulaire",
+    "offmodal.mbamou.act2": "— Observation faune et flore",
+    "offmodal.mbamou.act3": "— Baignade et détente sur les rives",
+    "offmodal.mbamou.act4": "— Pique-nique au bord de l'eau",
+    "offmodal.mbamou.inc1": "— Transport fluvial aller-retour",
+    "offmodal.mbamou.inc2": "— Guide naturaliste",
+    "offmodal.mbamou.inc3": "— Pique-nique inclus",
+    "offmodal.mbamou.inc4": "— Équipements de sécurité",
+
+    // Labels et titres manquants
+    "offmodal.privee.label": "Expérience premium",
+    "offmodal.privee.title": "Excursion privée",
+    "offmodal.circuit.label": "Multi-jours",
+    "offmodal.scolaire.label": "Groupe",
+    "offmodal.mbamou.label": "Faune et flore",
+    "offmodal.mbamou.title": "Île Mbamou",
   },
 
   en: {
@@ -792,6 +863,77 @@ const TRANSLATIONS = {
     "about.qsn.stat.passagers": "Passengers carried",
     "about.qsn.stat.destinations": "Destinations",
     "about.qsn.stat.satisfaction": "Satisfaction",
+
+    // ── PHASE 17 : Static offer modals (Offers page) ──
+    // Crossing
+    "offmodal.traversee.label": "Inter-capital crossing",
+    "offmodal.traversee.meta": "From 110,000 FCFA &nbsp;·&nbsp; ⏱ ~5 minutes",
+    "offmodal.traversee.desc": "The fastest river link between the two closest capitals in the world. Aboard CyrfloLeKoulou, certified by Digenaf.",
+    "offmodal.traversee.act1": "— Fast, secure crossing",
+    "offmodal.traversee.act2": "— Panoramic view of both capitals",
+    "offmodal.traversee.act3": "— Personalized welcome on board",
+    "offmodal.traversee.act4": "— Flexible daily departures",
+    "offmodal.traversee.inc1": "— Welcome on board",
+    "offmodal.traversee.inc2": "— Certified life jacket",
+    "offmodal.traversee.inc3": "— Qualified crew",
+    "offmodal.traversee.inc4": "— WhatsApp confirmation ticket",
+
+    // Private excursion
+    "offmodal.privee.meta": "From 45,000 FCFA &nbsp;·&nbsp; Custom",
+    "offmodal.privee.desc": "Charter CyrfloLeKoulou for an unforgettable experience. Ideal for birthdays, weddings, corporate outings, or romantic getaways.",
+    "offmodal.privee.act1": "— Private cruise on the Congo River",
+    "offmodal.privee.act2": "— Customized itinerary",
+    "offmodal.privee.act3": "— Sunset over the river",
+    "offmodal.privee.act4": "— Music and decoration available",
+    "offmodal.privee.inc1": "— Full boat charter",
+    "offmodal.privee.inc2": "— Dedicated crew",
+    "offmodal.privee.inc3": "— Champagne and buffet on request",
+    "offmodal.privee.inc4": "— Duration and route of your choice",
+
+    // 2-day tour
+    "offmodal.circuit.title": "2-day Koulou tour",
+    "offmodal.circuit.meta": "From 35,000 FCFA &nbsp;·&nbsp; 2 days / 1 night",
+    "offmodal.circuit.desc": "A two-day immersion in the river landscapes of Congo. Discover the Koulou gorges, riverside villages, and pristine nature.",
+    "offmodal.circuit.act1": "— Cruising through the Koulou gorges",
+    "offmodal.circuit.act2": "— Visiting riverside villages",
+    "offmodal.circuit.act3": "— Hiking and local wildlife discovery",
+    "offmodal.circuit.act4": "— Overnight at a partner lodge",
+    "offmodal.circuit.inc1": "— Round-trip river transport",
+    "offmodal.circuit.inc2": "— Accommodation included",
+    "offmodal.circuit.inc3": "— French-speaking local guide",
+    "offmodal.circuit.inc4": "— Dinner and breakfast",
+
+    // School excursion
+    "offmodal.scolaire.title": "School excursion",
+    "offmodal.scolaire.meta": "Price on request &nbsp;·&nbsp; Full day",
+    "offmodal.scolaire.desc": "A unique educational outing on the Congo River. Ideal for primary schools, middle schools, and high schools. Special group rates available.",
+    "offmodal.scolaire.act1": "— Discovering the Congo River",
+    "offmodal.scolaire.act2": "— Wildlife and vegetation observation",
+    "offmodal.scolaire.act3": "— Environmental awareness",
+    "offmodal.scolaire.act4": "— Educational activities on board",
+    "offmodal.scolaire.inc1": "— Round-trip river transport",
+    "offmodal.scolaire.inc2": "— Educational supervision",
+    "offmodal.scolaire.inc3": "— Life jackets",
+    "offmodal.scolaire.inc4": "— Custom quote on request",
+    "offmodal.scolaire.btn": "Request a quote →",
+
+    // Mbamou Island
+    "offmodal.mbamou.act1": "— Exploring the island forest",
+    "offmodal.mbamou.act2": "— Wildlife and vegetation observation",
+    "offmodal.mbamou.act3": "— Swimming and relaxing on the shore",
+    "offmodal.mbamou.act4": "— Picnic by the water",
+    "offmodal.mbamou.inc1": "— Round-trip river transport",
+    "offmodal.mbamou.inc2": "— Naturalist guide",
+    "offmodal.mbamou.inc3": "— Picnic included",
+    "offmodal.mbamou.inc4": "— Safety equipment",
+
+    // Missing labels/titles
+    "offmodal.privee.label": "Premium experience",
+    "offmodal.privee.title": "Private excursion",
+    "offmodal.circuit.label": "Multi-day",
+    "offmodal.scolaire.label": "Group",
+    "offmodal.mbamou.label": "Wildlife and vegetation",
+    "offmodal.mbamou.title": "Mbamou Island",
   }
 };
 
