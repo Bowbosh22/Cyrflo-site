@@ -468,6 +468,35 @@ const TRANSLATIONS = {
     "offmodal.scolaire.label": "Groupe",
     "offmodal.mbamou.label": "Faune et flore",
     "offmodal.mbamou.title": "Île Mbamou",
+
+    // ── PHASE 18 : Fin page Notre bateau ──
+    "bateau.arg5.title1": "Certifié autorités fluviales",
+    "bateau.arg5.desc1": "Gilets homologués, équipage formé, contrôles réguliers. Votre sécurité est notre priorité absolue.",
+    "bateau.arg5.title2": "Billet QR en 2 min",
+    "bateau.arg5.desc2": "Payez via Mobile Money (Airtel, MTN) et recevez votre billet directement sur WhatsApp. Zéro papier.",
+
+    "bateau.cta.title": "Prêt à vivre la traversée ?",
+    "bateau.cta.sub": "5 minutes. Deux capitales. Une expérience unique.",
+    "bateau.cta.btn": "Réserver maintenant",
+
+    "bateau.fiche.eyebrow": "Fiche technique",
+    "bateau.fiche.title": "Spécificités du bateau",
+    "bateau.fiche.organisme": "Organisme certificateur",
+    "bateau.fiche.chantier": "Chantier de construction",
+    "bateau.fiche.port": "Port d'attache",
+    "bateau.fiche.puissance": "Puissance de propulsion",
+    "bateau.fiche.datemiseflot": "Date de mise à flot",
+    "bateau.fiche.datemiseflot.value": "Mars 2023",
+    "bateau.fiche.moteur": "Type de moteur et nombre",
+    "bateau.fiche.typecanot": "Type de canot",
+    "bateau.fiche.typecanot.value": "Canot rapide",
+    "bateau.fiche.extincteurs": "Extincteurs à bord",
+    "bateau.fiche.extincteurs.value": "02 extincteurs de 06 kg",
+    "bateau.fiche.ancre": "Ancre",
+    "bateau.fiche.ancre.value": "01 ancre de 10 m",
+    "bateau.fiche.gilets": "Gilets de sauvetage",
+    "bateau.fiche.gilets.value": "16 gilets de sauvetage",
+    "bateau.fiche.capacite": "Capacité maximale",
   },
 
   en: {
@@ -934,6 +963,35 @@ const TRANSLATIONS = {
     "offmodal.scolaire.label": "Group",
     "offmodal.mbamou.label": "Wildlife and vegetation",
     "offmodal.mbamou.title": "Mbamou Island",
+
+    // ── PHASE 18 : End of Our boat page ──
+    "bateau.arg5.title1": "Certified by river authorities",
+    "bateau.arg5.desc1": "Approved life jackets, trained crew, regular inspections. Your safety is our top priority.",
+    "bateau.arg5.title2": "QR ticket in 2 min",
+    "bateau.arg5.desc2": "Pay via Mobile Money (Airtel, MTN) and receive your ticket directly on WhatsApp. Zero paper.",
+
+    "bateau.cta.title": "Ready to experience the crossing?",
+    "bateau.cta.sub": "5 minutes. Two capitals. A unique experience.",
+    "bateau.cta.btn": "Book now",
+
+    "bateau.fiche.eyebrow": "Technical specifications",
+    "bateau.fiche.title": "Boat specifications",
+    "bateau.fiche.organisme": "Certifying body",
+    "bateau.fiche.chantier": "Shipyard",
+    "bateau.fiche.port": "Home port",
+    "bateau.fiche.puissance": "Engine power",
+    "bateau.fiche.datemiseflot": "Launch date",
+    "bateau.fiche.datemiseflot.value": "March 2023",
+    "bateau.fiche.moteur": "Engine type and number",
+    "bateau.fiche.typecanot": "Boat type",
+    "bateau.fiche.typecanot.value": "Speedboat",
+    "bateau.fiche.extincteurs": "Onboard fire extinguishers",
+    "bateau.fiche.extincteurs.value": "02 extinguishers of 6 kg",
+    "bateau.fiche.ancre": "Anchor",
+    "bateau.fiche.ancre.value": "01 10m anchor",
+    "bateau.fiche.gilets": "Life jackets",
+    "bateau.fiche.gilets.value": "16 life jackets",
+    "bateau.fiche.capacite": "Maximum capacity",
   }
 };
 
